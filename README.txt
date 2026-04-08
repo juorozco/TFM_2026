@@ -1,6 +1,6 @@
-# TFM: Predicting Off-Target Effects of Kinase Inhibitors Using Multi-Label Classification
+TFM: Predicting Off-Target Effects of Kinase Inhibitors Using Multi-Label Classification
 
-## Descripció del projecte i objectius
+Descripció del projecte i objectius
 
 Aquest projecte té com a objectiu entrenar i comparar dos models de ML per predir els efectes *off-target* de diversos compostos sobre un grup seleccionat de cinases, enzims transferases que catalitzen la fosforilació de substrats específics i són crucials en processos com el metabolisme, el creixement i la divisió cel·lular. La conservació del lloc d’unió de l’ATP fa que molts inhibidors de cinases puguin afectar altres membres de la família, generant efectes adversos com la cardiotoxicitat.
 
@@ -11,7 +11,7 @@ Les dades es recullen de la base de dades [ChEMBL](https://www.ebi.ac.uk/chembl/
 Aquest repositori inclou el pipeline de descàrrega i preprocessament de les dades dut a terme fins ara.
 ---
 
-## Estructura del repositori
+Estructura del repositori
 
 
 data/
