@@ -1,319 +1,319 @@
 ChEMBL ID,Name,Accessions,Type,Organism,Compounds,Activities
-CHEMBL5907,Serine/threonine-protein kinase LATS2,Q9NRM7,SINGLE PROTEIN,Homo sapiens,556,704
-CHEMBL5638,Serine/threonine-protein kinase Nek11,Q8NG66,SINGLE PROTEIN,Homo sapiens,510,714
-CHEMBL5579,Citron Rho-interacting kinase,O14578,SINGLE PROTEIN,Homo sapiens,575,720
-CHEMBL5698,NUAK family SNF1-like kinase 2,Q9H093,SINGLE PROTEIN,Homo sapiens,564,728
-CHEMBL5914,Mitogen-activated protein kinase kinase kinase 2,Q9Y2U5,SINGLE PROTEIN,Homo sapiens,554,731
-CHEMBL5467,Bone morphogenetic protein receptor type-2,Q13873,SINGLE PROTEIN,Homo sapiens,578,740
-CHEMBL6029,Eukaryotic translation initiation factor 2-alpha kinase 1,Q9BQI3,SINGLE PROTEIN,Homo sapiens,556,740
-CHEMBL5435,Serine/threonine-protein kinase ULK2,Q8IYT8,SINGLE PROTEIN,Homo sapiens,515,743
-CHEMBL2109,Dual specificity mitogen-activated protein kinase kinase 3,P46734,SINGLE PROTEIN,Homo sapiens,557,748
-CHEMBL5432,Mitogen-activated protein kinase kinase kinase kinase 3,Q8IVH8,SINGLE PROTEIN,Homo sapiens,598,762
-CHEMBL6149,Serine/threonine-protein kinase SIK3,Q9Y2K2,SINGLE PROTEIN,Homo sapiens,632,778
-CHEMBL5785,"Interferon-induced, double-stranded RNA-activated protein kinase",P19525,SINGLE PROTEIN,Homo sapiens,555,781
-CHEMBL4948,Dual specificity mitogen-activated protein kinase kinase 5,Q13163,SINGLE PROTEIN,Homo sapiens,583,792
-CHEMBL4522,BMP-2-inducible protein kinase,Q9NSY1,SINGLE PROTEIN,Homo sapiens,596,799
-CHEMBL3123,Death-associated protein kinase 2,Q9UIK4,SINGLE PROTEIN,Homo sapiens,547,821
-CHEMBL4175,Megakaryocyte-associated tyrosine-protein kinase,P42679,SINGLE PROTEIN,Homo sapiens,775,834
-CHEMBL5198,Mitogen-activated protein kinase 15,Q8TD08,SINGLE PROTEIN,Homo sapiens,656,860
-CHEMBL6005,Serine/threonine-protein kinase 33,Q9BYT3,SINGLE PROTEIN,Homo sapiens,596,870
-CHEMBL4577,Homeodomain-interacting protein kinase 3,Q9H422,SINGLE PROTEIN,Homo sapiens,618,889
-CHEMBL4134,Ephrin type-A receptor 8,P29322,SINGLE PROTEIN,Homo sapiens,596,890
-CHEMBL5668,SRSF protein kinase 2,P78362,SINGLE PROTEIN,Homo sapiens,580,909
-CHEMBL6030,Eukaryotic translation initiation factor 2-alpha kinase 3,Q9NZJ5,SINGLE PROTEIN,Homo sapiens,473,916
-CHEMBL3980,Serine/threonine-protein kinase 17B,O94768,SINGLE PROTEIN,Homo sapiens,610,923
-CHEMBL5404,Serine/threonine-protein kinase tousled-like 2,Q86UE8,SINGLE PROTEIN,Homo sapiens,628,925
-CHEMBL4597,Cyclin-dependent kinase 16,Q00536,SINGLE PROTEIN,Homo sapiens,710,934
-CHEMBL3384,Serine/threonine-protein kinase N1,Q16512,SINGLE PROTEIN,Homo sapiens,715,970
-CHEMBL1075115,Dual specificity tyrosine-phosphorylation-regulated kinase 4,Q9NR20,SINGLE PROTEIN,Homo sapiens,927,970
-CHEMBL2358,Casein kinase II subunit beta,P67870,SINGLE PROTEIN,Homo sapiens,926,990
-CHEMBL5072,Ephrin type-B receptor 1,P54762,SINGLE PROTEIN,Homo sapiens,665,992
-CHEMBL5679,Serine/threonine-protein kinase Nek3,P51956,SINGLE PROTEIN,Homo sapiens,696,994
-CHEMBL5320,Myotonin-protein kinase,Q09013,SINGLE PROTEIN,Homo sapiens,683,1022
-CHEMBL3559692,Cyclin-dependent kinase 12,Q9NYV4,SINGLE PROTEIN,Homo sapiens,502,1024
-CHEMBL4896,Lymphokine-activated killer T-cell-originated protein kinase,Q96KB5,SINGLE PROTEIN,Homo sapiens,978,1028
-CHEMBL5047,Serine/threonine-protein kinase ULK3,Q6PHR2,SINGLE PROTEIN,Homo sapiens,706,1029
-CHEMBL3938,Serine/threonine-protein kinase 16,O75716,SINGLE PROTEIN,Homo sapiens,786,1034
-CHEMBL5819,Serine/threonine-protein kinase Nek4,P51957,SINGLE PROTEIN,Homo sapiens,983,1067
-CHEMBL5932,LIM domain kinase 2,P53671,SINGLE PROTEIN,Homo sapiens,815,1072
-CHEMBL1075195,Serine/threonine-protein kinase TAO2,Q9UL54,SINGLE PROTEIN,Homo sapiens,760,1079
-CHEMBL5364,Serine/threonine-protein kinase NLK,Q9UBE8,SINGLE PROTEIN,Homo sapiens,746,1088
-CHEMBL5683,Serine/threonine-protein kinase DCLK1,O15075,SINGLE PROTEIN,Homo sapiens,987,1099
-CHEMBL2872,Mitogen-activated protein kinase kinase kinase 9,P80192,SINGLE PROTEIN,Homo sapiens,786,1101
-CHEMBL5332,Mitogen-activated protein kinase 7,Q13164,SINGLE PROTEIN,Homo sapiens,741,1113
-CHEMBL5701,Serine/threonine-protein kinase TAO3,Q9H2K8,SINGLE PROTEIN,Homo sapiens,807,1115
-CHEMBL5606,Serine/threonine-protein kinase STK11,Q15831,SINGLE PROTEIN,Homo sapiens,784,1134
-CHEMBL5938,Serine/threonine-protein kinase PLK2,Q9NYY3,SINGLE PROTEIN,Homo sapiens,854,1134
-CHEMBL4602,Ephrin type-A receptor 7,Q15375,SINGLE PROTEIN,Homo sapiens,780,1152
-CHEMBL5810,Ephrin type-A receptor 1,P21709,SINGLE PROTEIN,Homo sapiens,810,1167
-CHEMBL3984,Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase,Q99640,SINGLE PROTEIN,Homo sapiens,660,1188
-CHEMBL1795199,Receptor-interacting serine/threonine-protein kinase 3,Q9Y572,SINGLE PROTEIN,Homo sapiens,703,1189
-CHEMBL5121,Mitogen-activated protein kinase 6,Q16659,SINGLE PROTEIN,Homo sapiens,626,1216
-CHEMBL3987,Ephrin type-A receptor 5,P54756,SINGLE PROTEIN,Homo sapiens,827,1216
-CHEMBL3530,Dual specificity mitogen-activated protein kinase kinase 7,O14733,SINGLE PROTEIN,Homo sapiens,938,1227
-CHEMBL4004,"Phosphorylase b kinase gamma catalytic chain, skeletal muscle/heart isoform",Q16816,SINGLE PROTEIN,Homo sapiens,762,1236
-CHEMBL4079,Beta-adrenergic receptor kinase 1,P25098,SINGLE PROTEIN,Homo sapiens,976,1249
-CHEMBL4355,Cyclin-G-associated kinase,O14976,SINGLE PROTEIN,Homo sapiens,867,1295
-CHEMBL5678,G protein-coupled receptor kinase 5,P34947,SINGLE PROTEIN,Homo sapiens,904,1320
-CHEMBL2897,Dual specificity mitogen-activated protein kinase kinase 4,P45985,SINGLE PROTEIN,Homo sapiens,726,1344
-CHEMBL4575,Dual specificity tyrosine-phosphorylation-regulated kinase 3,O43781,SINGLE PROTEIN,Homo sapiens,1241,1352
-CHEMBL1075163,Serine/threonine-protein kinase haspin,Q8TF76,SINGLE PROTEIN,Homo sapiens,829,1405
-CHEMBL5443,Cell division cycle 7-related protein kinase,O00311,SINGLE PROTEIN,Homo sapiens,1227,1406
-CHEMBL2964,Dual specificity mitogen-activated protein kinase kinase 2,P36507,SINGLE PROTEIN,Homo sapiens,1084,1431
-CHEMBL5776,Mitogen-activated protein kinase kinase kinase 7,O43318,SINGLE PROTEIN,Homo sapiens,919,1434
-CHEMBL1075133,Rhodopsin kinase GRK7,Q8WTQ7,SINGLE PROTEIN,Homo sapiens,862,1439
-CHEMBL2171,Dual specificity mitogen-activated protein kinase kinase 6,P52564,SINGLE PROTEIN,Homo sapiens,945,1462
-CHEMBL5082,Serine/threonine-protein kinase 24,Q9Y6E0,SINGLE PROTEIN,Homo sapiens,843,1464
-CHEMBL5284,Calcium/calmodulin-dependent protein kinase kinase 2,Q96RR4,SINGLE PROTEIN,Homo sapiens,990,1484
-CHEMBL5026,Eukaryotic elongation factor 2 kinase,O00418,SINGLE PROTEIN,Homo sapiens,1070,1493
-CHEMBL2428,"Myosin light chain kinase, smooth muscle",Q15746,SINGLE PROTEIN,Homo sapiens,925,1506
-CHEMBL5519,Serine/threonine-protein kinase DCLK2,Q8N568,SINGLE PROTEIN,Homo sapiens,910,1542
-CHEMBL6186,Serine/threonine-protein kinase Sgk3,Q96BR1,SINGLE PROTEIN,Homo sapiens,936,1571
-CHEMBL5415,SRSF protein kinase 3,Q9UPE1,SINGLE PROTEIN,Homo sapiens,955,1574
-CHEMBL5684,"Muscle, skeletal receptor tyrosine-protein kinase",O15146,SINGLE PROTEIN,Homo sapiens,963,1615
-CHEMBL2999,Serine/threonine-protein kinase PAK 3,O75914,SINGLE PROTEIN,Homo sapiens,944,1615
-CHEMBL3886,Mitogen-activated protein kinase kinase kinase 20,Q9NYL2,SINGLE PROTEIN,Homo sapiens,1380,1635
-CHEMBL4852,Mitogen-activated protein kinase kinase kinase kinase 5,Q9Y4K4,SINGLE PROTEIN,Homo sapiens,1385,1640
-CHEMBL5257,Serine/threonine-protein kinase Nek9,Q8TD19,SINGLE PROTEIN,Homo sapiens,1007,1642
-CHEMBL6082,Serine/threonine-protein kinase SIK1,P57059,SINGLE PROTEIN,Homo sapiens,997,1648
-CHEMBL5627,Leukocyte tyrosine kinase receptor,P29376,SINGLE PROTEIN,Homo sapiens,1127,1648
-CHEMBL5483,Insulin receptor-related protein,P14616,SINGLE PROTEIN,Homo sapiens,996,1652
-CHEMBL3582,Protein kinase C epsilon type,Q02156,SINGLE PROTEIN,Homo sapiens,1188,1663
-CHEMBL5703,Tyrosine-protein kinase Srms,Q9H3Y6,SINGLE PROTEIN,Homo sapiens,1189,1665
-CHEMBL4574,Serine/threonine-protein kinase BRSK2,Q8IWQ3,SINGLE PROTEIN,Homo sapiens,991,1669
-CHEMBL5427,Homeodomain-interacting protein kinase 1,Q86Z02,SINGLE PROTEIN,Homo sapiens,1057,1675
-CHEMBL5754,MAP/microtubule affinity-regulating kinase 4,Q96L34,SINGLE PROTEIN,Homo sapiens,1076,1676
-CHEMBL4954,Ephrin type-A receptor 3,P29320,SINGLE PROTEIN,Homo sapiens,1011,1690
-CHEMBL2896,cGMP-dependent protein kinase 2,Q13237,SINGLE PROTEIN,Homo sapiens,1225,1702
-CHEMBL5719,Cyclin-dependent kinase 8,P49336,SINGLE PROTEIN,Homo sapiens,1311,1709
-CHEMBL5334,Non-receptor tyrosine-protein kinase TNK1,Q13470,SINGLE PROTEIN,Homo sapiens,999,1730
-CHEMBL4121,Calcium/calmodulin-dependent protein kinase type II subunit beta,Q13554,SINGLE PROTEIN,Homo sapiens,1314,1743
-CHEMBL6144,G protein-coupled receptor kinase 6,P43250,SINGLE PROTEIN,Homo sapiens,1011,1750
-CHEMBL5699,Serine/threonine-protein kinase SIK2,Q9H0K1,SINGLE PROTEIN,Homo sapiens,1134,1754
-CHEMBL5940,Serine/threonine-protein kinase MARK1,Q9P0L2,SINGLE PROTEIN,Homo sapiens,1086,1765
-CHEMBL6014,Testis-specific serine/threonine-protein kinase 2,Q96PF2,SINGLE PROTEIN,Homo sapiens,1191,1769
-CHEMBL4576,Homeodomain-interacting protein kinase 2,Q9H2X6,SINGLE PROTEIN,Homo sapiens,1423,1776
-CHEMBL2558,Death-associated protein kinase 1,P53355,SINGLE PROTEIN,Homo sapiens,1097,1785
-CHEMBL4202,STE20-like serine/threonine-protein kinase,Q9H2G2,SINGLE PROTEIN,Homo sapiens,1464,1796
-CHEMBL2493,Calcium/calmodulin-dependent protein kinase type 1,Q14012,SINGLE PROTEIN,Homo sapiens,1406,1813
-CHEMBL1075167,Homeodomain-interacting protein kinase 4,Q8NE63,SINGLE PROTEIN,Homo sapiens,1343,1819
-CHEMBL6167,Serine/threonine-protein kinase LATS1,O95835,SINGLE PROTEIN,Homo sapiens,785,1839
-CHEMBL4524,Serine/threonine-protein kinase PAK 5,Q9P286,SINGLE PROTEIN,Homo sapiens,1076,1840
-CHEMBL5310,Activin receptor type-1B,P36896,SINGLE PROTEIN,Homo sapiens,956,1888
-CHEMBL5476,Bone morphogenetic protein receptor type-1B,O00238,SINGLE PROTEIN,Homo sapiens,790,1896
-CHEMBL3935,Aurora kinase C,Q9UQB9,SINGLE PROTEIN,Homo sapiens,1126,1899
-CHEMBL3829,Calcium/calmodulin-dependent protein kinase type II subunit gamma,Q13555,SINGLE PROTEIN,Homo sapiens,1385,1909
-CHEMBL5784,NUAK family SNF1-like kinase 1,O60285,SINGLE PROTEIN,Homo sapiens,1207,1913
-CHEMBL4454,Tyrosine-protein kinase Fgr,P09769,SINGLE PROTEIN,Homo sapiens,1154,1978
-CHEMBL5311,Activin receptor type-1-like,P37023,SINGLE PROTEIN,Homo sapiens,788,1983
-CHEMBL3616,Protein kinase C eta type,P24723,SINGLE PROTEIN,Homo sapiens,1240,1985
-CHEMBL5855,Serine/threonine-protein kinase Nek1,Q96PY6,SINGLE PROTEIN,Homo sapiens,1379,2020
-CHEMBL4901,Ephrin type-B receptor 3,P54753,SINGLE PROTEIN,Homo sapiens,1279,2046
-CHEMBL4311,Serine/threonine-protein kinase PAK 6,Q9NQU5,SINGLE PROTEIN,Homo sapiens,1203,2052
-CHEMBL4147,Calcium/calmodulin-dependent protein kinase type II subunit alpha,Q9UQM7,SINGLE PROTEIN,Homo sapiens,1427,2052
-CHEMBL4897,Serine/threonine-protein kinase PLK3,Q9H4B4,SINGLE PROTEIN,Homo sapiens,1670,2053
-CHEMBL3290,Ephrin type-B receptor 2,P29323,SINGLE PROTEIN,Homo sapiens,1250,2053
-CHEMBL4487,Serine/threonine-protein kinase PAK 2,Q13177,SINGLE PROTEIN,Homo sapiens,1308,2067
-CHEMBL3863,Serine/threonine-protein kinase D1,Q15139,SINGLE PROTEIN,Homo sapiens,1250,2080
-CHEMBL4849,Serine/threonine-protein kinase Nek7,Q8TDX7,SINGLE PROTEIN,Homo sapiens,1187,2081
-CHEMBL2708,Mitogen-activated protein kinase kinase kinase 11,Q16584,SINGLE PROTEIN,Homo sapiens,944,2096
-CHEMBL4525,Serine/threonine-protein kinase 17A,Q9UEE5,SINGLE PROTEIN,Homo sapiens,1522,2099
-CHEMBL4527,TRAF2 and NCK-interacting protein kinase,Q9UKE5,SINGLE PROTEIN,Homo sapiens,1223,2104
-CHEMBL4309,Serine/threonine-protein kinase Nek6,Q9HC98,SINGLE PROTEIN,Homo sapiens,1286,2134
-CHEMBL3032,Serine/threonine-protein kinase N2,Q16513,SINGLE PROTEIN,Homo sapiens,1615,2136
-CHEMBL5261,Serine/threonine-protein kinase TAO1,Q7L7X3,SINGLE PROTEIN,Homo sapiens,1658,2137
-CHEMBL1908389,Mitogen-activated protein kinase kinase kinase 12,Q12852,SINGLE PROTEIN,Homo sapiens,1241,2140
-CHEMBL4014,Tyrosine-protein kinase ABL2,P42684,SINGLE PROTEIN,Homo sapiens,1229,2141
-CHEMBL6003,Testis-specific serine/threonine-protein kinase 1,Q9BXA7,SINGLE PROTEIN,Homo sapiens,1473,2143
-CHEMBL5794,Serine/threonine-protein kinase Sgk2,Q9HBY8,SINGLE PROTEIN,Homo sapiens,1539,2143
-CHEMBL5275,Bone morphogenetic protein receptor type-1A,P36894,SINGLE PROTEIN,Homo sapiens,875,2147
-CHEMBL3988,Ephrin type-A receptor 4,P54764,SINGLE PROTEIN,Homo sapiens,1295,2183
-CHEMBL4924,Ribosomal protein S6 kinase alpha-6,Q9UK32,SINGLE PROTEIN,Homo sapiens,1144,2192
-CHEMBL5358,eIF-2-alpha kinase GCN2,Q9P2K8,SINGLE PROTEIN,Homo sapiens,936,2203
-CHEMBL2468,Death-associated protein kinase 3,O43293,SINGLE PROTEIN,Homo sapiens,1679,2215
-CHEMBL5650,Serine/threonine-protein kinase BRSK1,Q8TDC3,SINGLE PROTEIN,Homo sapiens,1555,2226
-CHEMBL2494,Calcium/calmodulin-dependent protein kinase type IV,Q16566,SINGLE PROTEIN,Homo sapiens,1426,2231
-CHEMBL3125,Ribosomal protein S6 kinase alpha-4,O75676,SINGLE PROTEIN,Homo sapiens,1210,2286
-CHEMBL4070,Casein kinase II subunit alpha',P19784,SINGLE PROTEIN,Homo sapiens,1228,2287
-CHEMBL3981,Serine/threonine-protein kinase 10,O94804,SINGLE PROTEIN,Homo sapiens,1389,2295
-CHEMBL4670,MAP kinase-activated protein kinase 3,Q16644,SINGLE PROTEIN,Homo sapiens,1627,2329
-CHEMBL3055,Cyclin-dependent kinase 7,P50613,SINGLE PROTEIN,Homo sapiens,1439,2329
-CHEMBL5818,cAMP-dependent protein kinase catalytic subunit PRKX,P51817,SINGLE PROTEIN,Homo sapiens,1677,2373
-CHEMBL5941,Serine/threonine-protein kinase 26,Q9P289,SINGLE PROTEIN,Homo sapiens,1380,2373
-CHEMBL2803,Tyrosine-protein kinase ZAP-70,P43403,SINGLE PROTEIN,Homo sapiens,1619,2379
-CHEMBL2349,"Phosphorylase b kinase gamma catalytic chain, liver/testis isoform",P15735,SINGLE PROTEIN,Homo sapiens,1599,2410
-CHEMBL2595,Serine/threonine-protein kinase D3,O94806,SINGLE PROTEIN,Homo sapiens,1816,2454
-CHEMBL5052,Serine/threonine-protein kinase MRCK beta,Q9Y5S2,SINGLE PROTEIN,Homo sapiens,1289,2466
-CHEMBL5455,Tyrosine-protein kinase Fes/Fps,P07332,SINGLE PROTEIN,Homo sapiens,1692,2482
-CHEMBL4223,Tyrosine-protein kinase FRK,P42685,SINGLE PROTEIN,Homo sapiens,1629,2490
-CHEMBL3836,LIM domain kinase 1,P53667,SINGLE PROTEIN,Homo sapiens,1832,2491
-CHEMBL5518,Misshapen-like kinase 1,Q8N4C8,SINGLE PROTEIN,Homo sapiens,1760,2498
-CHEMBL2689,Macrophage-stimulating protein receptor,Q04912,SINGLE PROTEIN,Homo sapiens,1677,2505
-CHEMBL3438,Protein kinase C zeta type,Q05513,SINGLE PROTEIN,Homo sapiens,1795,2505
-CHEMBL3861,"[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 2, mitochondrial",Q15119,SINGLE PROTEIN,Homo sapiens,1123,2510
-CHEMBL5084,Casein kinase I isoform gamma-3,Q9Y6M4,SINGLE PROTEIN,Homo sapiens,1703,2511
-CHEMBL3906,Ribosomal protein S6 kinase alpha-2,Q15349,SINGLE PROTEIN,Homo sapiens,1354,2527
-CHEMBL2938,Protein kinase C gamma type,P05129,SINGLE PROTEIN,Homo sapiens,1809,2544
-CHEMBL4376,Dual specificity tyrosine-phosphorylation-regulated kinase 2,Q92630,SINGLE PROTEIN,Homo sapiens,1783,2548
-CHEMBL3982,Tyrosine-protein kinase Fer,P16591,SINGLE PROTEIN,Homo sapiens,1682,2550
-CHEMBL4246,Tyrosine-protein kinase Tec,P42680,SINGLE PROTEIN,Homo sapiens,1367,2557
-CHEMBL4766,"[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",Q15118,SINGLE PROTEIN,Homo sapiens,1886,2599
-CHEMBL5122,Discoidin domain-containing receptor 2,Q16832,SINGLE PROTEIN,Homo sapiens,1493,2616
-CHEMBL2426,Casein kinase I isoform gamma-1,Q9HCP0,SINGLE PROTEIN,Homo sapiens,1776,2616
-CHEMBL5073,Calcium/calmodulin-dependent protein kinase type 1D,Q8IU85,SINGLE PROTEIN,Homo sapiens,1529,2637
-CHEMBL2543,Casein kinase I isoform gamma-2,P78368,SINGLE PROTEIN,Homo sapiens,1792,2647
-CHEMBL2634,Tyrosine-protein kinase CSK,P41240,SINGLE PROTEIN,Homo sapiens,1658,2652
-CHEMBL4045,5'-AMP-activated protein kinase catalytic subunit alpha-1,Q13131,SINGLE PROTEIN,Homo sapiens,1940,2662
-CHEMBL5600,MAP/microtubule affinity-regulating kinase 3,P27448,SINGLE PROTEIN,Homo sapiens,1970,2714
-CHEMBL4600,Serine/threonine-protein kinase PAK 1,Q13153,SINGLE PROTEIN,Homo sapiens,2016,2726
-CHEMBL3831,Serine/threonine-protein kinase MARK2,Q7KZI7,SINGLE PROTEIN,Homo sapiens,1847,2751
-CHEMBL5608,NT-3 growth factor receptor,Q16288,SINGLE PROTEIN,Homo sapiens,2039,2767
-CHEMBL3834,Cytoplasmic tyrosine-protein kinase BMX,P51813,SINGLE PROTEIN,Homo sapiens,1391,2774
-CHEMBL2793,Casein kinase I isoform alpha,P48729,SINGLE PROTEIN,Homo sapiens,2132,2823
-CHEMBL4516,Serine/threonine-protein kinase MRCK alpha,Q5VT25,SINGLE PROTEIN,Homo sapiens,1942,2867
-CHEMBL5330,Mitogen-activated protein kinase kinase kinase kinase 2,Q12851,SINGLE PROTEIN,Homo sapiens,2063,2888
-CHEMBL4367,Tyrosine-protein kinase TXK,P42681,SINGLE PROTEIN,Homo sapiens,1416,2898
-CHEMBL2116,5'-AMP-activated protein kinase catalytic subunit alpha-2,P54646,SINGLE PROTEIN,Homo sapiens,1413,2907
-CHEMBL4224,Dual specificity protein kinase CLK1,P49759,SINGLE PROTEIN,Homo sapiens,2085,2913
-CHEMBL4601,Protein-tyrosine kinase 6,Q13882,SINGLE PROTEIN,Homo sapiens,1878,2914
-CHEMBL2598,Protein kinase C iota type,P41743,SINGLE PROTEIN,Homo sapiens,2194,2916
-CHEMBL3961,Mitogen-activated protein kinase 11,Q15759,SINGLE PROTEIN,Homo sapiens,1843,2959
-CHEMBL5568,Proto-oncogene tyrosine-protein kinase ROS,P08922,SINGLE PROTEIN,Homo sapiens,1772,2966
-CHEMBL2801,Calcium/calmodulin-dependent protein kinase type II subunit delta,Q13557,SINGLE PROTEIN,Homo sapiens,2027,2968
-CHEMBL4273,cGMP-dependent protein kinase 1,Q13976,SINGLE PROTEIN,Homo sapiens,1737,2968
-CHEMBL3009,Receptor tyrosine-protein kinase erbB-4,Q15303,SINGLE PROTEIN,Homo sapiens,2113,2971
-CHEMBL3094,MAP kinase-activated protein kinase 5,Q8IW41,SINGLE PROTEIN,Homo sapiens,2089,3016
-CHEMBL4900,Serine/threonine-protein kinase D2,Q9BZL6,SINGLE PROTEIN,Homo sapiens,2158,3031
-CHEMBL2250,Tyrosine-protein kinase Blk,P51451,SINGLE PROTEIN,Homo sapiens,1930,3032
-CHEMBL5469,Protein-tyrosine kinase 2-beta,Q14289,SINGLE PROTEIN,Homo sapiens,2157,3061
-CHEMBL5543,Dual specificity tyrosine-phosphorylation-regulated kinase 1B,Q9Y463,SINGLE PROTEIN,Homo sapiens,2233,3062
-CHEMBL2073,Tyrosine-protein kinase Yes,P07947,SINGLE PROTEIN,Homo sapiens,1800,3073
-CHEMBL4375,SRSF protein kinase 1,Q96SB4,SINGLE PROTEIN,Homo sapiens,1880,3083
-CHEMBL4226,Dual specificity protein kinase CLK3,P49761,SINGLE PROTEIN,Homo sapiens,2232,3114
-CHEMBL2939,Mitogen-activated protein kinase 13,O15264,SINGLE PROTEIN,Homo sapiens,2086,3124
-CHEMBL2996,Protein kinase C delta type,Q05655,SINGLE PROTEIN,Homo sapiens,2417,3138
-CHEMBL3357,Interleukin-1 receptor-associated kinase 1,P51617,SINGLE PROTEIN,Homo sapiens,1891,3212
-CHEMBL5888,Mitogen-activated protein kinase kinase kinase 14,Q99558,SINGLE PROTEIN,Homo sapiens,1658,3230
-CHEMBL3234,Tyrosine-protein kinase HCK,P08631,SINGLE PROTEIN,Homo sapiens,1785,3249
-CHEMBL2553,Ribosomal protein S6 kinase alpha-1,Q15418,SINGLE PROTEIN,Homo sapiens,1825,3281
-CHEMBL4599,Activated CDC42 kinase 1,Q07912,SINGLE PROTEIN,Homo sapiens,2140,3282
-CHEMBL4816,RAC-gamma serine/threonine-protein kinase,Q9Y243,SINGLE PROTEIN,Homo sapiens,2350,3314
-CHEMBL6006,Serine/threonine-protein kinase ULK1,O75385,SINGLE PROTEIN,Homo sapiens,1093,3327
-CHEMBL4267,TGF-beta receptor type-2,P37173,SINGLE PROTEIN,Homo sapiens,1492,3330
-CHEMBL2508,Cyclin-dependent kinase 6,Q00534,SINGLE PROTEIN,Homo sapiens,1691,3345
-CHEMBL3476,Inhibitor of nuclear factor kappa-B kinase subunit alpha,O15111,SINGLE PROTEIN,Homo sapiens,1940,3426
-CHEMBL5014,Receptor-interacting serine/threonine-protein kinase 2,O43353,SINGLE PROTEIN,Homo sapiens,1600,3441
-CHEMBL1955,Vascular endothelial growth factor receptor 3,P35916,SINGLE PROTEIN,Homo sapiens,2423,3443
-CHEMBL4482,Serine/threonine-protein kinase PAK 4,O96013,SINGLE PROTEIN,Homo sapiens,2573,3459
-CHEMBL4036,Cyclin-dependent kinase 5,Q00535,SINGLE PROTEIN,Homo sapiens,2501,3467
-CHEMBL4674,Mitogen-activated protein kinase 12,P53778,SINGLE PROTEIN,Homo sapiens,2143,3488
-CHEMBL3788,Serine/threonine-protein kinase PLK4,O00444,SINGLE PROTEIN,Homo sapiens,2063,3509
-CHEMBL4128,Angiopoietin-1 receptor,Q02763,SINGLE PROTEIN,Homo sapiens,2405,3535
-CHEMBL4237,Ribosomal protein S6 kinase alpha-5,O75582,SINGLE PROTEIN,Homo sapiens,2179,3575
-CHEMBL5491,Wee1-like protein kinase,P30291,SINGLE PROTEIN,Homo sapiens,1774,3605
-CHEMBL3920,Protein kinase C theta type,Q04759,SINGLE PROTEIN,Homo sapiens,2525,3612
 CHEMBL4101,cAMP-dependent protein kinase catalytic subunit alpha,P17612,SINGLE PROTEIN,Homo sapiens,2614,3628
-CHEMBL4578,Maternal embryonic leucine zipper kinase,Q14680,SINGLE PROTEIN,Homo sapiens,2668,3718
+CHEMBL3988,Ephrin type-A receptor 4,P54764,SINGLE PROTEIN,Homo sapiens,1295,2183
+CHEMBL6005,Serine/threonine-protein kinase 33,Q9BYT3,SINGLE PROTEIN,Homo sapiens,596,870
+CHEMBL4070,Casein kinase II subunit alpha',P19784,SINGLE PROTEIN,Homo sapiens,1228,2287
+CHEMBL6029,Eukaryotic translation initiation factor 2-alpha kinase 1,Q9BQI3,SINGLE PROTEIN,Homo sapiens,556,740
+CHEMBL3530,Dual specificity mitogen-activated protein kinase kinase 7,O14733,SINGLE PROTEIN,Homo sapiens,938,1227
+CHEMBL4246,Tyrosine-protein kinase Tec,P42680,SINGLE PROTEIN,Homo sapiens,1367,2557
+CHEMBL4852,Mitogen-activated protein kinase kinase kinase kinase 5,Q9Y4K4,SINGLE PROTEIN,Homo sapiens,1385,1640
+CHEMBL3829,Calcium/calmodulin-dependent protein kinase type II subunit gamma,Q13555,SINGLE PROTEIN,Homo sapiens,1385,1909
+CHEMBL3384,Serine/threonine-protein kinase N1,Q16512,SINGLE PROTEIN,Homo sapiens,715,970
+CHEMBL5435,Serine/threonine-protein kinase ULK2,Q8IYT8,SINGLE PROTEIN,Homo sapiens,515,743
+CHEMBL5776,Mitogen-activated protein kinase kinase kinase 7,O43318,SINGLE PROTEIN,Homo sapiens,919,1434
+CHEMBL4576,Homeodomain-interacting protein kinase 2,Q9H2X6,SINGLE PROTEIN,Homo sapiens,1423,1776
+CHEMBL4487,Serine/threonine-protein kinase PAK 2,Q13177,SINGLE PROTEIN,Homo sapiens,1308,2067
+CHEMBL6003,Testis-specific serine/threonine-protein kinase 1,Q9BXA7,SINGLE PROTEIN,Homo sapiens,1473,2143
+CHEMBL5358,eIF-2-alpha kinase GCN2,Q9P2K8,SINGLE PROTEIN,Homo sapiens,936,2203
+CHEMBL4948,Dual specificity mitogen-activated protein kinase kinase 5,Q13163,SINGLE PROTEIN,Homo sapiens,583,792
+CHEMBL5261,Serine/threonine-protein kinase TAO1,Q7L7X3,SINGLE PROTEIN,Homo sapiens,1658,2137
 CHEMBL3835,Serine/threonine-protein kinase Nek2,P51955,SINGLE PROTEIN,Homo sapiens,2622,3769
-CHEMBL4598,Serine/threonine-protein kinase 4,Q13043,SINGLE PROTEIN,Homo sapiens,1828,3790
-CHEMBL3529,Inhibitor of nuclear factor kappa-B kinase subunit epsilon,Q14164,SINGLE PROTEIN,Homo sapiens,2175,3801
-CHEMBL4708,Serine/threonine-protein kinase 3,Q13188,SINGLE PROTEIN,Homo sapiens,2424,4034
-CHEMBL1772932,Mitotic checkpoint serine/threonine-protein kinase BUB1,O43683,SINGLE PROTEIN,Homo sapiens,1564,4121
-CHEMBL4898,BDNF/NT-3 growth factors receptor,Q16620,SINGLE PROTEIN,Homo sapiens,2630,4290
-CHEMBL2527,Serine/threonine-protein kinase Chk2,O96017,SINGLE PROTEIN,Homo sapiens,2876,4311
-CHEMBL331,Cyclin-dependent kinase 4,P11802,SINGLE PROTEIN,Homo sapiens,2438,4376
-CHEMBL2343,Serine/threonine-protein kinase Sgk1,O00141,SINGLE PROTEIN,Homo sapiens,2149,4418
-CHEMBL5147,Ephrin type-B receptor 4,P54760,SINGLE PROTEIN,Homo sapiens,2539,4429
-CHEMBL4203,Dual specificity protein kinase CLK4,Q9HAZ1,SINGLE PROTEIN,Homo sapiens,2939,4468
-CHEMBL4225,Dual specificity protein kinase CLK2,P49760,SINGLE PROTEIN,Homo sapiens,3371,4487
-CHEMBL3045,Protein kinase C beta type,P05771,SINGLE PROTEIN,Homo sapiens,2012,4535
-CHEMBL308,Cyclin-dependent kinase 1,P06493,SINGLE PROTEIN,Homo sapiens,3348,4536
-CHEMBL2637,Mitogen-activated protein kinase 10,P53779,SINGLE PROTEIN,Homo sapiens,3106,4553
-CHEMBL4937,Casein kinase I isoform epsilon,P49674,SINGLE PROTEIN,Homo sapiens,2443,4658
-CHEMBL2345,Ribosomal protein S6 kinase alpha-3,P51812,SINGLE PROTEIN,Homo sapiens,2943,4687
-CHEMBL2068,Ephrin type-A receptor 2,P29317,SINGLE PROTEIN,Homo sapiens,2902,4750
-CHEMBL6166,Mitogen-activated protein kinase kinase kinase kinase 4,O95819,SINGLE PROTEIN,Homo sapiens,2660,5019
-CHEMBL3629,Casein kinase II subunit alpha,P68400,SINGLE PROTEIN,Homo sapiens,2618,5264
-CHEMBL3587,Dual specificity mitogen-activated protein kinase kinase 1,Q02750,SINGLE PROTEIN,Homo sapiens,3199,5281
-CHEMBL5319,Epithelial discoidin domain-containing receptor 1,Q08345,SINGLE PROTEIN,Homo sapiens,2219,5364
-CHEMBL3116,Cyclin-dependent kinase 9,P50750,SINGLE PROTEIN,Homo sapiens,2791,5434
-CHEMBL4179,Mitogen-activated protein kinase 9,P45984,SINGLE PROTEIN,Homo sapiens,3891,5530
-CHEMBL6054,PAS domain-containing serine/threonine-protein kinase,Q96RG2,SINGLE PROTEIN,Homo sapiens,1667,5538
-CHEMBL2431,RAC-beta serine/threonine-protein kinase,P31751,SINGLE PROTEIN,Homo sapiens,3418,5912
-CHEMBL3983,Dual specificity protein kinase TTK,P33981,SINGLE PROTEIN,Homo sapiens,2582,5918
-CHEMBL4501,Ribosomal protein S6 kinase beta-1,P23443,SINGLE PROTEIN,Homo sapiens,3803,5957
-CHEMBL1981,Insulin receptor,P06213,SINGLE PROTEIN,Homo sapiens,4064,5994
-CHEMBL2276,Mitogen-activated protein kinase 8,P45983,SINGLE PROTEIN,Homo sapiens,4412,6105
-CHEMBL2208,MAP kinase-activated protein kinase 2,P49137,SINGLE PROTEIN,Homo sapiens,3925,6114
-CHEMBL1991,Inhibitor of nuclear factor kappa-B kinase subunit beta,O14920,SINGLE PROTEIN,Homo sapiens,3655,6123
-CHEMBL3385,Mitogen-activated protein kinase 3,P27361,SINGLE PROTEIN,Homo sapiens,3384,6178
-CHEMBL4718,MAP kinase-interacting serine/threonine-protein kinase 1,Q9BUB5,SINGLE PROTEIN,Homo sapiens,2659,6193
-CHEMBL299,Protein kinase C alpha type,P17252,SINGLE PROTEIN,Homo sapiens,4076,6223
-CHEMBL2695,Focal adhesion kinase 1,Q05397,SINGLE PROTEIN,Homo sapiens,4190,6272
-CHEMBL3905,Tyrosine-protein kinase Lyn,P07948,SINGLE PROTEIN,Homo sapiens,3004,6388
-CHEMBL3142,DNA-dependent protein kinase catalytic subunit,P78527,SINGLE PROTEIN,Homo sapiens,2255,6651
-CHEMBL2007,Platelet-derived growth factor receptor alpha,P16234,SINGLE PROTEIN,Homo sapiens,2664,6670
-CHEMBL3830,AP2-associated protein kinase 1,Q2M2I8,SINGLE PROTEIN,Homo sapiens,1480,6782
-CHEMBL3797,Serine-protein kinase ATM,Q13315,SINGLE PROTEIN,Homo sapiens,4191,6858
-CHEMBL5903,Activin receptor type-1,Q04771,SINGLE PROTEIN,Homo sapiens,2353,7015
-CHEMBL2534,3-phosphoinositide-dependent protein kinase 1,O15530,SINGLE PROTEIN,Homo sapiens,3970,7275
-CHEMBL4204,MAP kinase-interacting serine/threonine-protein kinase 2,Q9HBH9,SINGLE PROTEIN,Homo sapiens,3607,7361
-CHEMBL1868,Vascular endothelial growth factor receptor 1,P17948,SINGLE PROTEIN,Homo sapiens,4575,7436
-CHEMBL2959,Tyrosine-protein kinase ITK/TSK,Q08881,SINGLE PROTEIN,Homo sapiens,3410,7443
-CHEMBL5285,Mitogen-activated protein kinase kinase kinase 5,Q99683,SINGLE PROTEIN,Homo sapiens,2805,7692
-CHEMBL1913,Platelet-derived growth factor receptor beta,P09619,SINGLE PROTEIN,Homo sapiens,4305,7770
-CHEMBL2850,Glycogen synthase kinase-3 alpha,P49840,SINGLE PROTEIN,Homo sapiens,3707,7801
-CHEMBL2828,Casein kinase I isoform delta,P48730,SINGLE PROTEIN,Homo sapiens,5103,8091
-CHEMBL5407,Serine/threonine-protein kinase pim-3,Q86V86,SINGLE PROTEIN,Homo sapiens,3956,8731
-CHEMBL4630,Serine/threonine-protein kinase Chk1,O14757,SINGLE PROTEIN,Homo sapiens,5716,8971
-CHEMBL1957,Insulin-like growth factor 1 receptor,P08069,SINGLE PROTEIN,Homo sapiens,5791,8978
-CHEMBL5314,Tyrosine-protein kinase receptor TYRO3,Q06418,SINGLE PROTEIN,Homo sapiens,3722,9453
-CHEMBL2185,Aurora kinase B,Q96GD4,SINGLE PROTEIN,Homo sapiens,5575,9505
-CHEMBL4247,ALK tyrosine kinase receptor,Q9UM73,SINGLE PROTEIN,Homo sapiens,4521,9751
-CHEMBL1844,Macrophage colony-stimulating factor 1 receptor,P07333,SINGLE PROTEIN,Homo sapiens,4826,9963
+CHEMBL2896,cGMP-dependent protein kinase 2,Q13237,SINGLE PROTEIN,Homo sapiens,1225,1702
+CHEMBL6149,Serine/threonine-protein kinase SIK3,Q9Y2K2,SINGLE PROTEIN,Homo sapiens,632,778
 CHEMBL4523,Serine/threonine-protein kinase pim-2,Q9P1W9,SINGLE PROTEIN,Homo sapiens,5477,10561
-CHEMBL4439,TGF-beta receptor type-1,P36897,SINGLE PROTEIN,Homo sapiens,3734,10681
+CHEMBL4522,BMP-2-inducible protein kinase,Q9NSY1,SINGLE PROTEIN,Homo sapiens,596,799
+CHEMBL3987,Ephrin type-A receptor 5,P54756,SINGLE PROTEIN,Homo sapiens,827,1216
+CHEMBL5332,Mitogen-activated protein kinase 7,Q13164,SINGLE PROTEIN,Homo sapiens,741,1113
+CHEMBL4900,Serine/threonine-protein kinase D2,Q9BZL6,SINGLE PROTEIN,Homo sapiens,2158,3031
+CHEMBL4602,Ephrin type-A receptor 7,Q15375,SINGLE PROTEIN,Homo sapiens,780,1152
 CHEMBL3231,Rho-associated protein kinase 1,Q13464,SINGLE PROTEIN,Homo sapiens,5373,10690
-CHEMBL1824,Receptor tyrosine-protein kinase erbB-2,P04626,SINGLE PROTEIN,Homo sapiens,6268,10985
-CHEMBL1841,Tyrosine-protein kinase Fyn,P06241,SINGLE PROTEIN,Homo sapiens,4368,11093
-CHEMBL301,Cyclin-dependent kinase 2,P24941,SINGLE PROTEIN,Homo sapiens,7441,11236
-CHEMBL258,Tyrosine-protein kinase Lck,P06239,SINGLE PROTEIN,Homo sapiens,6886,11854
-CHEMBL4722,Aurora kinase A,O14965,SINGLE PROTEIN,Homo sapiens,8828,12415
-CHEMBL3973,Fibroblast growth factor receptor 4,P22455,SINGLE PROTEIN,Homo sapiens,3764,12481
-CHEMBL4895,Tyrosine-protein kinase receptor UFO,P30530,SINGLE PROTEIN,Homo sapiens,5083,13019
+CHEMBL5703,Tyrosine-protein kinase Srms,Q9H3Y6,SINGLE PROTEIN,Homo sapiens,1189,1665
+CHEMBL5404,Serine/threonine-protein kinase tousled-like 2,Q86UE8,SINGLE PROTEIN,Homo sapiens,628,925
+CHEMBL5432,Mitogen-activated protein kinase kinase kinase kinase 3,Q8IVH8,SINGLE PROTEIN,Homo sapiens,598,762
+CHEMBL1075115,Dual specificity tyrosine-phosphorylation-regulated kinase 4,Q9NR20,SINGLE PROTEIN,Homo sapiens,927,970
+CHEMBL4454,Tyrosine-protein kinase Fgr,P09769,SINGLE PROTEIN,Homo sapiens,1154,1978
+CHEMBL5407,Serine/threonine-protein kinase pim-3,Q86V86,SINGLE PROTEIN,Homo sapiens,3956,8731
+CHEMBL3830,AP2-associated protein kinase 1,Q2M2I8,SINGLE PROTEIN,Homo sapiens,1480,6782
+CHEMBL4273,cGMP-dependent protein kinase 1,Q13976,SINGLE PROTEIN,Homo sapiens,1737,2968
+CHEMBL6054,PAS domain-containing serine/threonine-protein kinase,Q96RG2,SINGLE PROTEIN,Homo sapiens,1667,5538
+CHEMBL4311,Serine/threonine-protein kinase PAK 6,Q9NQU5,SINGLE PROTEIN,Homo sapiens,1203,2052
+CHEMBL4079,Beta-adrenergic receptor kinase 1,P25098,SINGLE PROTEIN,Homo sapiens,976,1249
+CHEMBL4674,Mitogen-activated protein kinase 12,P53778,SINGLE PROTEIN,Homo sapiens,2143,3488
 CHEMBL5408,Serine/threonine-protein kinase TBK1,Q9UHD2,SINGLE PROTEIN,Homo sapiens,4278,13108
-CHEMBL4142,Fibroblast growth factor receptor 2,P21802,SINGLE PROTEIN,Homo sapiens,4687,13303
-CHEMBL5331,Tyrosine-protein kinase Mer,Q12866,SINGLE PROTEIN,Homo sapiens,4204,13577
+CHEMBL2897,Dual specificity mitogen-activated protein kinase kinase 4,P45985,SINGLE PROTEIN,Homo sapiens,726,1344
+CHEMBL4527,TRAF2 and NCK-interacting protein kinase,Q9UKE5,SINGLE PROTEIN,Homo sapiens,1223,2104
+CHEMBL5257,Serine/threonine-protein kinase Nek9,Q8TD19,SINGLE PROTEIN,Homo sapiens,1007,1642
+CHEMBL6014,Testis-specific serine/threonine-protein kinase 2,Q96PF2,SINGLE PROTEIN,Homo sapiens,1191,1769
+CHEMBL4202,STE20-like serine/threonine-protein kinase,Q9H2G2,SINGLE PROTEIN,Homo sapiens,1464,1796
+CHEMBL5047,Serine/threonine-protein kinase ULK3,Q6PHR2,SINGLE PROTEIN,Homo sapiens,706,1029
+CHEMBL4525,Serine/threonine-protein kinase 17A,Q9UEE5,SINGLE PROTEIN,Homo sapiens,1522,2099
+CHEMBL5052,Serine/threonine-protein kinase MRCK beta,Q9Y5S2,SINGLE PROTEIN,Homo sapiens,1289,2466
+CHEMBL1795199,Receptor-interacting serine/threonine-protein kinase 3,Q9Y572,SINGLE PROTEIN,Homo sapiens,703,1189
+CHEMBL5810,Ephrin type-A receptor 1,P21709,SINGLE PROTEIN,Homo sapiens,810,1167
+CHEMBL2598,Protein kinase C iota type,P41743,SINGLE PROTEIN,Homo sapiens,2194,2916
+CHEMBL5785,"Interferon-induced, double-stranded RNA-activated protein kinase",P19525,SINGLE PROTEIN,Homo sapiens,555,781
+CHEMBL5284,Calcium/calmodulin-dependent protein kinase kinase 2,Q96RR4,SINGLE PROTEIN,Homo sapiens,990,1484
+CHEMBL3836,LIM domain kinase 1,P53667,SINGLE PROTEIN,Homo sapiens,1832,2491
+CHEMBL5121,Mitogen-activated protein kinase 6,Q16659,SINGLE PROTEIN,Homo sapiens,626,1216
+CHEMBL2938,Protein kinase C gamma type,P05129,SINGLE PROTEIN,Homo sapiens,1809,2544
+CHEMBL4516,Serine/threonine-protein kinase MRCK alpha,Q5VT25,SINGLE PROTEIN,Homo sapiens,1942,2867
+CHEMBL2147,Serine/threonine-protein kinase pim-1,P11309,SINGLE PROTEIN,Homo sapiens,8601,22229
+CHEMBL3906,Ribosomal protein S6 kinase alpha-2,Q15349,SINGLE PROTEIN,Homo sapiens,1354,2527
+CHEMBL1075195,Serine/threonine-protein kinase TAO2,Q9UL54,SINGLE PROTEIN,Homo sapiens,760,1079
+CHEMBL1824,Receptor tyrosine-protein kinase erbB-2,P04626,SINGLE PROTEIN,Homo sapiens,6268,10985
+CHEMBL2185,Aurora kinase B,Q96GD4,SINGLE PROTEIN,Homo sapiens,5575,9505
+CHEMBL4147,Calcium/calmodulin-dependent protein kinase type II subunit alpha,Q9UQM7,SINGLE PROTEIN,Homo sapiens,1427,2052
+CHEMBL5683,Serine/threonine-protein kinase DCLK1,O15075,SINGLE PROTEIN,Homo sapiens,987,1099
+CHEMBL5698,NUAK family SNF1-like kinase 2,Q9H093,SINGLE PROTEIN,Homo sapiens,564,728
+CHEMBL4577,Homeodomain-interacting protein kinase 3,Q9H422,SINGLE PROTEIN,Homo sapiens,618,889
+CHEMBL4204,MAP kinase-interacting serine/threonine-protein kinase 2,Q9HBH9,SINGLE PROTEIN,Homo sapiens,3607,7361
+CHEMBL4524,Serine/threonine-protein kinase PAK 5,Q9P286,SINGLE PROTEIN,Homo sapiens,1076,1840
+CHEMBL5519,Serine/threonine-protein kinase DCLK2,Q8N568,SINGLE PROTEIN,Homo sapiens,910,1542
+CHEMBL5907,Serine/threonine-protein kinase LATS2,Q9NRM7,SINGLE PROTEIN,Homo sapiens,556,704
+CHEMBL4670,MAP kinase-activated protein kinase 3,Q16644,SINGLE PROTEIN,Homo sapiens,1627,2329
+CHEMBL2493,Calcium/calmodulin-dependent protein kinase type 1,Q14012,SINGLE PROTEIN,Homo sapiens,1406,1813
+CHEMBL4575,Dual specificity tyrosine-phosphorylation-regulated kinase 3,O43781,SINGLE PROTEIN,Homo sapiens,1241,1352
+CHEMBL5679,Serine/threonine-protein kinase Nek3,P51956,SINGLE PROTEIN,Homo sapiens,696,994
+CHEMBL2494,Calcium/calmodulin-dependent protein kinase type IV,Q16566,SINGLE PROTEIN,Homo sapiens,1426,2231
+CHEMBL5699,Serine/threonine-protein kinase SIK2,Q9H0K1,SINGLE PROTEIN,Homo sapiens,1134,1754
+CHEMBL5014,Receptor-interacting serine/threonine-protein kinase 2,O43353,SINGLE PROTEIN,Homo sapiens,1600,3441
+CHEMBL1075163,Serine/threonine-protein kinase haspin,Q8TF76,SINGLE PROTEIN,Homo sapiens,829,1405
+CHEMBL5941,Serine/threonine-protein kinase 26,Q9P289,SINGLE PROTEIN,Homo sapiens,1380,2373
+CHEMBL5638,Serine/threonine-protein kinase Nek11,Q8NG66,SINGLE PROTEIN,Homo sapiens,510,714
+CHEMBL4237,Ribosomal protein S6 kinase alpha-5,O75582,SINGLE PROTEIN,Homo sapiens,2179,3575
+CHEMBL4718,MAP kinase-interacting serine/threonine-protein kinase 1,Q9BUB5,SINGLE PROTEIN,Homo sapiens,2659,6193
+CHEMBL5364,Serine/threonine-protein kinase NLK,Q9UBE8,SINGLE PROTEIN,Homo sapiens,746,1088
+CHEMBL3861,"[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 2, mitochondrial",Q15119,SINGLE PROTEIN,Homo sapiens,1123,2510
+CHEMBL3886,Mitogen-activated protein kinase kinase kinase 20,Q9NYL2,SINGLE PROTEIN,Homo sapiens,1380,1635
+CHEMBL5684,"Muscle, skeletal receptor tyrosine-protein kinase",O15146,SINGLE PROTEIN,Homo sapiens,963,1615
+CHEMBL3981,Serine/threonine-protein kinase 10,O94804,SINGLE PROTEIN,Homo sapiens,1389,2295
+CHEMBL5334,Non-receptor tyrosine-protein kinase TNK1,Q13470,SINGLE PROTEIN,Homo sapiens,999,1730
+CHEMBL4766,"[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozyme 1, mitochondrial",Q15118,SINGLE PROTEIN,Homo sapiens,1886,2599
+CHEMBL2595,Serine/threonine-protein kinase D3,O94806,SINGLE PROTEIN,Homo sapiens,1816,2454
+CHEMBL4355,Cyclin-G-associated kinase,O14976,SINGLE PROTEIN,Homo sapiens,867,1295
+CHEMBL3984,Membrane-associated tyrosine- and threonine-specific cdc2-inhibitory kinase,Q99640,SINGLE PROTEIN,Homo sapiens,660,1188
+CHEMBL5122,Discoidin domain-containing receptor 2,Q16832,SINGLE PROTEIN,Homo sapiens,1493,2616
+CHEMBL3983,Dual specificity protein kinase TTK,P33981,SINGLE PROTEIN,Homo sapiens,2582,5918
+CHEMBL4226,Dual specificity protein kinase CLK3,P49761,SINGLE PROTEIN,Homo sapiens,2232,3114
+CHEMBL5198,Mitogen-activated protein kinase 15,Q8TD08,SINGLE PROTEIN,Homo sapiens,656,860
+CHEMBL3125,Ribosomal protein S6 kinase alpha-4,O75676,SINGLE PROTEIN,Homo sapiens,1210,2286
+CHEMBL5491,Wee1-like protein kinase,P30291,SINGLE PROTEIN,Homo sapiens,1774,3605
+CHEMBL1908389,Mitogen-activated protein kinase kinase kinase 12,Q12852,SINGLE PROTEIN,Homo sapiens,1241,2140
+CHEMBL4630,Serine/threonine-protein kinase Chk1,O14757,SINGLE PROTEIN,Homo sapiens,5716,8971
+CHEMBL4175,Megakaryocyte-associated tyrosine-protein kinase,P42679,SINGLE PROTEIN,Homo sapiens,775,834
+CHEMBL4045,5'-AMP-activated protein kinase catalytic subunit alpha-1,Q13131,SINGLE PROTEIN,Homo sapiens,1940,2662
+CHEMBL2007,Platelet-derived growth factor receptor alpha,P16234,SINGLE PROTEIN,Homo sapiens,2664,6670
+CHEMBL4722,Aurora kinase A,O14965,SINGLE PROTEIN,Homo sapiens,8828,12415
+CHEMBL3650,Fibroblast growth factor receptor 1,P11362,SINGLE PROTEIN,Homo sapiens,8315,21960
+CHEMBL6166,Mitogen-activated protein kinase kinase kinase kinase 4,O95819,SINGLE PROTEIN,Homo sapiens,2660,5019
+CHEMBL3797,Serine-protein kinase ATM,Q13315,SINGLE PROTEIN,Homo sapiens,4191,6858
+CHEMBL5627,Leukocyte tyrosine kinase receptor,P29376,SINGLE PROTEIN,Homo sapiens,1127,1648
+CHEMBL5719,Cyclin-dependent kinase 8,P49336,SINGLE PROTEIN,Homo sapiens,1311,1709
+CHEMBL2276,Mitogen-activated protein kinase 8,P45983,SINGLE PROTEIN,Homo sapiens,4412,6105
+CHEMBL5914,Mitogen-activated protein kinase kinase kinase 2,Q9Y2U5,SINGLE PROTEIN,Homo sapiens,554,731
+CHEMBL2171,Dual specificity mitogen-activated protein kinase kinase 6,P52564,SINGLE PROTEIN,Homo sapiens,945,1462
+CHEMBL2109,Dual specificity mitogen-activated protein kinase kinase 3,P46734,SINGLE PROTEIN,Homo sapiens,557,748
+CHEMBL3938,Serine/threonine-protein kinase 16,O75716,SINGLE PROTEIN,Homo sapiens,786,1034
+CHEMBL5483,Insulin receptor-related protein,P14616,SINGLE PROTEIN,Homo sapiens,996,1652
+CHEMBL4708,Serine/threonine-protein kinase 3,Q13188,SINGLE PROTEIN,Homo sapiens,2424,4034
+CHEMBL2431,RAC-beta serine/threonine-protein kinase,P31751,SINGLE PROTEIN,Homo sapiens,3418,5912
 CHEMBL5024,Serine/threonine-protein kinase ATR,Q13535,SINGLE PROTEIN,Homo sapiens,2762,13907
+CHEMBL2208,MAP kinase-activated protein kinase 2,P49137,SINGLE PROTEIN,Homo sapiens,3925,6114
+CHEMBL4439,TGF-beta receptor type-1,P36897,SINGLE PROTEIN,Homo sapiens,3734,10681
+CHEMBL308,Cyclin-dependent kinase 1,P06493,SINGLE PROTEIN,Homo sapiens,3348,4536
+CHEMBL1955,Vascular endothelial growth factor receptor 3,P35916,SINGLE PROTEIN,Homo sapiens,2423,3443
+CHEMBL3094,MAP kinase-activated protein kinase 5,Q8IW41,SINGLE PROTEIN,Homo sapiens,2089,3016
+CHEMBL1075104,Leucine-rich repeat serine/threonine-protein kinase 2,Q5S007,SINGLE PROTEIN,Homo sapiens,5366,18142
+CHEMBL2345,Ribosomal protein S6 kinase alpha-3,P51812,SINGLE PROTEIN,Homo sapiens,2943,4687
+CHEMBL2349,"Phosphorylase b kinase gamma catalytic chain, liver/testis isoform",P15735,SINGLE PROTEIN,Homo sapiens,1599,2410
+CHEMBL4224,Dual specificity protein kinase CLK1,P49759,SINGLE PROTEIN,Homo sapiens,2085,2913
+CHEMBL2553,Ribosomal protein S6 kinase alpha-1,Q15418,SINGLE PROTEIN,Homo sapiens,1825,3281
+CHEMBL5579,Citron Rho-interacting kinase,O14578,SINGLE PROTEIN,Homo sapiens,575,720
+CHEMBL6082,Serine/threonine-protein kinase SIK1,P57059,SINGLE PROTEIN,Homo sapiens,997,1648
+CHEMBL4849,Serine/threonine-protein kinase Nek7,Q8TDX7,SINGLE PROTEIN,Homo sapiens,1187,2081
+CHEMBL4375,SRSF protein kinase 1,Q96SB4,SINGLE PROTEIN,Homo sapiens,1880,3083
+CHEMBL5888,Mitogen-activated protein kinase kinase kinase 14,Q99558,SINGLE PROTEIN,Homo sapiens,1658,3230
+CHEMBL5819,Serine/threonine-protein kinase Nek4,P51957,SINGLE PROTEIN,Homo sapiens,983,1067
+CHEMBL5415,SRSF protein kinase 3,Q9UPE1,SINGLE PROTEIN,Homo sapiens,955,1574
+CHEMBL4896,Lymphokine-activated killer T-cell-originated protein kinase,Q96KB5,SINGLE PROTEIN,Homo sapiens,978,1028
+CHEMBL2801,Calcium/calmodulin-dependent protein kinase type II subunit delta,Q13557,SINGLE PROTEIN,Homo sapiens,2027,2968
+CHEMBL4134,Ephrin type-A receptor 8,P29322,SINGLE PROTEIN,Homo sapiens,596,890
+CHEMBL3123,Death-associated protein kinase 2,Q9UIK4,SINGLE PROTEIN,Homo sapiens,547,821
+CHEMBL5650,Serine/threonine-protein kinase BRSK1,Q8TDC3,SINGLE PROTEIN,Homo sapiens,1555,2226
+CHEMBL4574,Serine/threonine-protein kinase BRSK2,Q8IWQ3,SINGLE PROTEIN,Homo sapiens,991,1669
+CHEMBL5940,Serine/threonine-protein kinase MARK1,Q9P0L2,SINGLE PROTEIN,Homo sapiens,1086,1765
+CHEMBL2358,Casein kinase II subunit beta,P67870,SINGLE PROTEIN,Homo sapiens,926,990
+CHEMBL1772932,Mitotic checkpoint serine/threonine-protein kinase BUB1,O43683,SINGLE PROTEIN,Homo sapiens,1564,4121
+CHEMBL2116,5'-AMP-activated protein kinase catalytic subunit alpha-2,P54646,SINGLE PROTEIN,Homo sapiens,1413,2907
+CHEMBL4014,Tyrosine-protein kinase ABL2,P42684,SINGLE PROTEIN,Homo sapiens,1229,2141
+CHEMBL5668,SRSF protein kinase 2,P78362,SINGLE PROTEIN,Homo sapiens,580,909
+CHEMBL3559692,Cyclin-dependent kinase 12,Q9NYV4,SINGLE PROTEIN,Homo sapiens,502,1024
+CHEMBL5082,Serine/threonine-protein kinase 24,Q9Y6E0,SINGLE PROTEIN,Homo sapiens,843,1464
+CHEMBL2250,Tyrosine-protein kinase Blk,P51451,SINGLE PROTEIN,Homo sapiens,1930,3032
+CHEMBL5331,Tyrosine-protein kinase Mer,Q12866,SINGLE PROTEIN,Homo sapiens,4204,13577
+CHEMBL4376,Dual specificity tyrosine-phosphorylation-regulated kinase 2,Q92630,SINGLE PROTEIN,Homo sapiens,1783,2548
+CHEMBL3778,Interleukin-1 receptor-associated kinase 4,Q9NWZ3,SINGLE PROTEIN,Homo sapiens,11188,32353
+CHEMBL6167,Serine/threonine-protein kinase LATS1,O95835,SINGLE PROTEIN,Homo sapiens,785,1839
+CHEMBL4578,Maternal embryonic leucine zipper kinase,Q14680,SINGLE PROTEIN,Homo sapiens,2668,3718
+CHEMBL5467,Bone morphogenetic protein receptor type-2,Q13873,SINGLE PROTEIN,Homo sapiens,578,740
+CHEMBL3357,Interleukin-1 receptor-associated kinase 1,P51617,SINGLE PROTEIN,Homo sapiens,1891,3212
+CHEMBL4924,Ribosomal protein S6 kinase alpha-6,Q9UK32,SINGLE PROTEIN,Homo sapiens,1144,2192
+CHEMBL2428,"Myosin light chain kinase, smooth muscle",Q15746,SINGLE PROTEIN,Homo sapiens,925,1506
+CHEMBL4897,Serine/threonine-protein kinase PLK3,Q9H4B4,SINGLE PROTEIN,Homo sapiens,1670,2053
+CHEMBL5330,Mitogen-activated protein kinase kinase kinase kinase 2,Q12851,SINGLE PROTEIN,Homo sapiens,2063,2888
+CHEMBL203,Epidermal growth factor receptor,P00533,SINGLE PROTEIN,Homo sapiens,18740,57722
+CHEMBL5427,Homeodomain-interacting protein kinase 1,Q86Z02,SINGLE PROTEIN,Homo sapiens,1057,1675
+CHEMBL6144,G protein-coupled receptor kinase 6,P43250,SINGLE PROTEIN,Homo sapiens,1011,1750
+CHEMBL5701,Serine/threonine-protein kinase TAO3,Q9H2K8,SINGLE PROTEIN,Homo sapiens,807,1115
+CHEMBL3834,Cytoplasmic tyrosine-protein kinase BMX,P51813,SINGLE PROTEIN,Homo sapiens,1391,2774
+CHEMBL5455,Tyrosine-protein kinase Fes/Fps,P07332,SINGLE PROTEIN,Homo sapiens,1692,2482
+CHEMBL3920,Protein kinase C theta type,Q04759,SINGLE PROTEIN,Homo sapiens,2525,3612
+CHEMBL3438,Protein kinase C zeta type,Q05513,SINGLE PROTEIN,Homo sapiens,1795,2505
+CHEMBL3973,Fibroblast growth factor receptor 4,P22455,SINGLE PROTEIN,Homo sapiens,3764,12481
+CHEMBL301,Cyclin-dependent kinase 2,P24941,SINGLE PROTEIN,Homo sapiens,7441,11236
+CHEMBL4597,Cyclin-dependent kinase 16,Q00536,SINGLE PROTEIN,Homo sapiens,710,934
+CHEMBL5147,Ephrin type-B receptor 4,P54760,SINGLE PROTEIN,Homo sapiens,2539,4429
+CHEMBL3582,Protein kinase C epsilon type,Q02156,SINGLE PROTEIN,Homo sapiens,1188,1663
+CHEMBL1991,Inhibitor of nuclear factor kappa-B kinase subunit beta,O14920,SINGLE PROTEIN,Homo sapiens,3655,6123
+CHEMBL3629,Casein kinase II subunit alpha,P68400,SINGLE PROTEIN,Homo sapiens,2618,5264
+CHEMBL2527,Serine/threonine-protein kinase Chk2,O96017,SINGLE PROTEIN,Homo sapiens,2876,4311
+CHEMBL4937,Casein kinase I isoform epsilon,P49674,SINGLE PROTEIN,Homo sapiens,2443,4658
+CHEMBL2073,Tyrosine-protein kinase Yes,P07947,SINGLE PROTEIN,Homo sapiens,1800,3073
+CHEMBL1844,Macrophage colony-stimulating factor 1 receptor,P07333,SINGLE PROTEIN,Homo sapiens,4826,9963
+CHEMBL3587,Dual specificity mitogen-activated protein kinase kinase 1,Q02750,SINGLE PROTEIN,Homo sapiens,3199,5281
+CHEMBL5469,Protein-tyrosine kinase 2-beta,Q14289,SINGLE PROTEIN,Homo sapiens,2157,3061
+CHEMBL5251,Tyrosine-protein kinase BTK,Q06187,SINGLE PROTEIN,Homo sapiens,14853,61728
+CHEMBL2959,Tyrosine-protein kinase ITK/TSK,Q08881,SINGLE PROTEIN,Homo sapiens,3410,7443
+CHEMBL3055,Cyclin-dependent kinase 7,P50613,SINGLE PROTEIN,Homo sapiens,1439,2329
+CHEMBL2708,Mitogen-activated protein kinase kinase kinase 11,Q16584,SINGLE PROTEIN,Homo sapiens,944,2096
+CHEMBL4128,Angiopoietin-1 receptor,Q02763,SINGLE PROTEIN,Homo sapiens,2405,3535
+CHEMBL5903,Activin receptor type-1,Q04771,SINGLE PROTEIN,Homo sapiens,2353,7015
+CHEMBL1974,Receptor-type tyrosine-protein kinase FLT3,P36888,SINGLE PROTEIN,Homo sapiens,8546,19473
+CHEMBL4482,Serine/threonine-protein kinase PAK 4,O96013,SINGLE PROTEIN,Homo sapiens,2573,3459
+CHEMBL1936,Mast/stem cell growth factor receptor Kit,P10721,SINGLE PROTEIN,Homo sapiens,6372,24367
+CHEMBL1981,Insulin receptor,P06213,SINGLE PROTEIN,Homo sapiens,4064,5994
+CHEMBL279,Vascular endothelial growth factor receptor 2,P35968,SINGLE PROTEIN,Homo sapiens,16941,29352
+CHEMBL2996,Protein kinase C delta type,Q05655,SINGLE PROTEIN,Homo sapiens,2417,3138
+CHEMBL6030,Eukaryotic translation initiation factor 2-alpha kinase 3,Q9NZJ5,SINGLE PROTEIN,Homo sapiens,473,916
+CHEMBL5073,Calcium/calmodulin-dependent protein kinase type 1D,Q8IU85,SINGLE PROTEIN,Homo sapiens,1529,2637
+CHEMBL5072,Ephrin type-B receptor 1,P54762,SINGLE PROTEIN,Homo sapiens,665,992
+CHEMBL5754,MAP/microtubule affinity-regulating kinase 4,Q96L34,SINGLE PROTEIN,Homo sapiens,1076,1676
+CHEMBL5311,Activin receptor type-1-like,P37023,SINGLE PROTEIN,Homo sapiens,788,1983
+CHEMBL5464,Receptor-interacting serine/threonine-protein kinase 1,Q13546,SINGLE PROTEIN,Homo sapiens,4960,16973
+CHEMBL1913,Platelet-derived growth factor receptor beta,P09619,SINGLE PROTEIN,Homo sapiens,4305,7770
+CHEMBL2292,Dual specificity tyrosine-phosphorylation-regulated kinase 1A,Q13627,SINGLE PROTEIN,Homo sapiens,6590,17790
+CHEMBL5600,MAP/microtubule affinity-regulating kinase 3,P27448,SINGLE PROTEIN,Homo sapiens,1970,2714
+CHEMBL2971,Tyrosine-protein kinase JAK2,O60674,SINGLE PROTEIN,Homo sapiens,17559,56207
+CHEMBL4599,Activated CDC42 kinase 1,Q07912,SINGLE PROTEIN,Homo sapiens,2140,3282
+CHEMBL5749,Mitogen-activated protein kinase kinase kinase kinase 1,Q92918,SINGLE PROTEIN,Homo sapiens,6422,29391
+CHEMBL6186,Serine/threonine-protein kinase Sgk3,Q96BR1,SINGLE PROTEIN,Homo sapiens,936,1571
+CHEMBL2828,Casein kinase I isoform delta,P48730,SINGLE PROTEIN,Homo sapiens,5103,8091
+CHEMBL4267,TGF-beta receptor type-2,P37173,SINGLE PROTEIN,Homo sapiens,1492,3330
+CHEMBL3385,Mitogen-activated protein kinase 3,P27361,SINGLE PROTEIN,Homo sapiens,3384,6178
+CHEMBL3290,Ephrin type-B receptor 2,P29323,SINGLE PROTEIN,Homo sapiens,1250,2053
+CHEMBL1075133,Rhodopsin kinase GRK7,Q8WTQ7,SINGLE PROTEIN,Homo sapiens,862,1439
+CHEMBL5938,Serine/threonine-protein kinase PLK2,Q9NYY3,SINGLE PROTEIN,Homo sapiens,854,1134
 CHEMBL267,Proto-oncogene tyrosine-protein kinase Src,P12931,SINGLE PROTEIN,Homo sapiens,8537,15433
+CHEMBL3788,Serine/threonine-protein kinase PLK4,O00444,SINGLE PROTEIN,Homo sapiens,2063,3509
+CHEMBL4223,Tyrosine-protein kinase FRK,P42685,SINGLE PROTEIN,Homo sapiens,1629,2490
+CHEMBL5932,LIM domain kinase 2,P53671,SINGLE PROTEIN,Homo sapiens,815,1072
+CHEMBL2543,Casein kinase I isoform gamma-2,P78368,SINGLE PROTEIN,Homo sapiens,1792,2647
+CHEMBL4036,Cyclin-dependent kinase 5,Q00535,SINGLE PROTEIN,Homo sapiens,2501,3467
+CHEMBL5678,G protein-coupled receptor kinase 5,P34947,SINGLE PROTEIN,Homo sapiens,904,1320
+CHEMBL4367,Tyrosine-protein kinase TXK,P42681,SINGLE PROTEIN,Homo sapiens,1416,2898
+CHEMBL3553,Non-receptor tyrosine-protein kinase TYK2,P29597,SINGLE PROTEIN,Homo sapiens,10448,44810
+CHEMBL4004,"Phosphorylase b kinase gamma catalytic chain, skeletal muscle/heart isoform",Q16816,SINGLE PROTEIN,Homo sapiens,762,1236
+CHEMBL4282,RAC-alpha serine/threonine-protein kinase,P31749,SINGLE PROTEIN,Homo sapiens,7404,16595
+CHEMBL2534,3-phosphoinositide-dependent protein kinase 1,O15530,SINGLE PROTEIN,Homo sapiens,3970,7275
+CHEMBL3009,Receptor tyrosine-protein kinase erbB-4,Q15303,SINGLE PROTEIN,Homo sapiens,2113,2971
+CHEMBL4600,Serine/threonine-protein kinase PAK 1,Q13153,SINGLE PROTEIN,Homo sapiens,2016,2726
+CHEMBL5145,Serine/threonine-protein kinase B-raf,P15056,SINGLE PROTEIN,Homo sapiens,8874,25907
+CHEMBL5476,Bone morphogenetic protein receptor type-1B,O00238,SINGLE PROTEIN,Homo sapiens,790,1896
+CHEMBL3717,Hepatocyte growth factor receptor,P08581,SINGLE PROTEIN,Homo sapiens,8735,19853
+CHEMBL1868,Vascular endothelial growth factor receptor 1,P17948,SINGLE PROTEIN,Homo sapiens,4575,7436
+CHEMBL4142,Fibroblast growth factor receptor 2,P21802,SINGLE PROTEIN,Homo sapiens,4687,13303
+CHEMBL5314,Tyrosine-protein kinase receptor TYRO3,Q06418,SINGLE PROTEIN,Homo sapiens,3722,9453
+CHEMBL3616,Protein kinase C eta type,P24723,SINGLE PROTEIN,Homo sapiens,1240,1985
+CHEMBL4121,Calcium/calmodulin-dependent protein kinase type II subunit beta,Q13554,SINGLE PROTEIN,Homo sapiens,1314,1743
+CHEMBL5855,Serine/threonine-protein kinase Nek1,Q96PY6,SINGLE PROTEIN,Homo sapiens,1379,2020
+CHEMBL2599,Tyrosine-protein kinase SYK,P43405,SINGLE PROTEIN,Homo sapiens,7858,17619
+CHEMBL5443,Cell division cycle 7-related protein kinase,O00311,SINGLE PROTEIN,Homo sapiens,1227,1406
+CHEMBL3142,DNA-dependent protein kinase catalytic subunit,P78527,SINGLE PROTEIN,Homo sapiens,2255,6651
+CHEMBL3935,Aurora kinase C,Q9UQB9,SINGLE PROTEIN,Homo sapiens,1126,1899
+CHEMBL3905,Tyrosine-protein kinase Lyn,P07948,SINGLE PROTEIN,Homo sapiens,3004,6388
+CHEMBL5285,Mitogen-activated protein kinase kinase kinase 5,Q99683,SINGLE PROTEIN,Homo sapiens,2805,7692
+CHEMBL2835,Tyrosine-protein kinase JAK1,P23458,SINGLE PROTEIN,Homo sapiens,14268,47653
+CHEMBL2068,Ephrin type-A receptor 2,P29317,SINGLE PROTEIN,Homo sapiens,2902,4750
+CHEMBL3032,Serine/threonine-protein kinase N2,Q16513,SINGLE PROTEIN,Homo sapiens,1615,2136
+CHEMBL4203,Dual specificity protein kinase CLK4,Q9HAZ1,SINGLE PROTEIN,Homo sapiens,2939,4468
+CHEMBL5320,Myotonin-protein kinase,Q09013,SINGLE PROTEIN,Homo sapiens,683,1022
+CHEMBL3980,Serine/threonine-protein kinase 17B,O94768,SINGLE PROTEIN,Homo sapiens,610,923
+CHEMBL5543,Dual specificity tyrosine-phosphorylation-regulated kinase 1B,Q9Y463,SINGLE PROTEIN,Homo sapiens,2233,3062
+CHEMBL5319,Epithelial discoidin domain-containing receptor 1,Q08345,SINGLE PROTEIN,Homo sapiens,2219,5364
+CHEMBL2508,Cyclin-dependent kinase 6,Q00534,SINGLE PROTEIN,Homo sapiens,1691,3345
+CHEMBL5794,Serine/threonine-protein kinase Sgk2,Q9HBY8,SINGLE PROTEIN,Homo sapiens,1539,2143
+CHEMBL2468,Death-associated protein kinase 3,O43293,SINGLE PROTEIN,Homo sapiens,1679,2215
+CHEMBL2939,Mitogen-activated protein kinase 13,O15264,SINGLE PROTEIN,Homo sapiens,2086,3124
+CHEMBL6006,Serine/threonine-protein kinase ULK1,O75385,SINGLE PROTEIN,Homo sapiens,1093,3327
 CHEMBL1906,RAF proto-oncogene serine/threonine-protein kinase,P04049,SINGLE PROTEIN,Homo sapiens,5327,16104
 CHEMBL260,Mitogen-activated protein kinase 14,Q16539,SINGLE PROTEIN,Homo sapiens,9153,16324
-CHEMBL4282,RAC-alpha serine/threonine-protein kinase,P31749,SINGLE PROTEIN,Homo sapiens,7404,16595
-CHEMBL2742,Fibroblast growth factor receptor 3,P22607,SINGLE PROTEIN,Homo sapiens,6362,16788
-CHEMBL5464,Receptor-interacting serine/threonine-protein kinase 1,Q13546,SINGLE PROTEIN,Homo sapiens,4960,16973
-CHEMBL2842,Serine/threonine-protein kinase mTOR,P42345,SINGLE PROTEIN,Homo sapiens,10265,17574
-CHEMBL2599,Tyrosine-protein kinase SYK,P43405,SINGLE PROTEIN,Homo sapiens,7858,17619
-CHEMBL2292,Dual specificity tyrosine-phosphorylation-regulated kinase 1A,Q13627,SINGLE PROTEIN,Homo sapiens,6590,17790
-CHEMBL1075104,Leucine-rich repeat serine/threonine-protein kinase 2,Q5S007,SINGLE PROTEIN,Homo sapiens,5366,18142
-CHEMBL1974,Receptor-type tyrosine-protein kinase FLT3,P36888,SINGLE PROTEIN,Homo sapiens,8546,19473
-CHEMBL3717,Hepatocyte growth factor receptor,P08581,SINGLE PROTEIN,Homo sapiens,8735,19853
-CHEMBL2973,Rho-associated protein kinase 2,O75116,SINGLE PROTEIN,Homo sapiens,8452,20159
-CHEMBL3650,Fibroblast growth factor receptor 1,P11362,SINGLE PROTEIN,Homo sapiens,8315,21960
-CHEMBL2147,Serine/threonine-protein kinase pim-1,P11309,SINGLE PROTEIN,Homo sapiens,8601,22229
-CHEMBL262,Glycogen synthase kinase-3 beta,P49841,SINGLE PROTEIN,Homo sapiens,11278,24077
-CHEMBL1936,Mast/stem cell growth factor receptor Kit,P10721,SINGLE PROTEIN,Homo sapiens,6372,24367
-CHEMBL1862,Tyrosine-protein kinase ABL1,P00519,SINGLE PROTEIN,Homo sapiens,8245,25804
-CHEMBL5145,Serine/threonine-protein kinase B-raf,P15056,SINGLE PROTEIN,Homo sapiens,8874,25907
-CHEMBL2815,High affinity nerve growth factor receptor,P04629,SINGLE PROTEIN,Homo sapiens,8686,26516
-CHEMBL3024,Serine/threonine-protein kinase PLK1,P53350,SINGLE PROTEIN,Homo sapiens,27354,29080
-CHEMBL279,Vascular endothelial growth factor receptor 2,P35968,SINGLE PROTEIN,Homo sapiens,16941,29352
-CHEMBL5749,Mitogen-activated protein kinase kinase kinase kinase 1,Q92918,SINGLE PROTEIN,Homo sapiens,6422,29391
-CHEMBL3778,Interleukin-1 receptor-associated kinase 4,Q9NWZ3,SINGLE PROTEIN,Homo sapiens,11188,32353
+CHEMBL1841,Tyrosine-protein kinase Fyn,P06241,SINGLE PROTEIN,Homo sapiens,4368,11093
+CHEMBL4225,Dual specificity protein kinase CLK2,P49760,SINGLE PROTEIN,Homo sapiens,3371,4487
 CHEMBL2148,Tyrosine-protein kinase JAK3,P52333,SINGLE PROTEIN,Homo sapiens,11618,34068
-CHEMBL4040,Mitogen-activated protein kinase 1,P28482,SINGLE PROTEIN,Homo sapiens,24506,38639
-CHEMBL3553,Non-receptor tyrosine-protein kinase TYK2,P29597,SINGLE PROTEIN,Homo sapiens,10448,44810
-CHEMBL2835,Tyrosine-protein kinase JAK1,P23458,SINGLE PROTEIN,Homo sapiens,14268,47653
-CHEMBL2971,Tyrosine-protein kinase JAK2,O60674,SINGLE PROTEIN,Homo sapiens,17559,56207
-CHEMBL203,Epidermal growth factor receptor,P00533,SINGLE PROTEIN,Homo sapiens,18740,57722
-CHEMBL5251,Tyrosine-protein kinase BTK,Q06187,SINGLE PROTEIN,Homo sapiens,14853,61728
+CHEMBL2850,Glycogen synthase kinase-3 alpha,P49840,SINGLE PROTEIN,Homo sapiens,3707,7801
+CHEMBL5608,NT-3 growth factor receptor,Q16288,SINGLE PROTEIN,Homo sapiens,2039,2767
+CHEMBL2973,Rho-associated protein kinase 2,O75116,SINGLE PROTEIN,Homo sapiens,8452,20159
+CHEMBL5275,Bone morphogenetic protein receptor type-1A,P36894,SINGLE PROTEIN,Homo sapiens,875,2147
+CHEMBL2815,High affinity nerve growth factor receptor,P04629,SINGLE PROTEIN,Homo sapiens,8686,26516
+CHEMBL5310,Activin receptor type-1B,P36896,SINGLE PROTEIN,Homo sapiens,956,1888
+CHEMBL2964,Dual specificity mitogen-activated protein kinase kinase 2,P36507,SINGLE PROTEIN,Homo sapiens,1084,1431
+CHEMBL5606,Serine/threonine-protein kinase STK11,Q15831,SINGLE PROTEIN,Homo sapiens,784,1134
+CHEMBL5518,Misshapen-like kinase 1,Q8N4C8,SINGLE PROTEIN,Homo sapiens,1760,2498
+CHEMBL2634,Tyrosine-protein kinase CSK,P41240,SINGLE PROTEIN,Homo sapiens,1658,2652
+CHEMBL5084,Casein kinase I isoform gamma-3,Q9Y6M4,SINGLE PROTEIN,Homo sapiens,1703,2511
+CHEMBL2558,Death-associated protein kinase 1,P53355,SINGLE PROTEIN,Homo sapiens,1097,1785
+CHEMBL2803,Tyrosine-protein kinase ZAP-70,P43403,SINGLE PROTEIN,Homo sapiens,1619,2379
+CHEMBL5026,Eukaryotic elongation factor 2 kinase,O00418,SINGLE PROTEIN,Homo sapiens,1070,1493
+CHEMBL2793,Casein kinase I isoform alpha,P48729,SINGLE PROTEIN,Homo sapiens,2132,2823
+CHEMBL3529,Inhibitor of nuclear factor kappa-B kinase subunit epsilon,Q14164,SINGLE PROTEIN,Homo sapiens,2175,3801
+CHEMBL4309,Serine/threonine-protein kinase Nek6,Q9HC98,SINGLE PROTEIN,Homo sapiens,1286,2134
+CHEMBL4179,Mitogen-activated protein kinase 9,P45984,SINGLE PROTEIN,Homo sapiens,3891,5530
+CHEMBL5568,Proto-oncogene tyrosine-protein kinase ROS,P08922,SINGLE PROTEIN,Homo sapiens,1772,2966
+CHEMBL2872,Mitogen-activated protein kinase kinase kinase 9,P80192,SINGLE PROTEIN,Homo sapiens,786,1101
+CHEMBL3234,Tyrosine-protein kinase HCK,P08631,SINGLE PROTEIN,Homo sapiens,1785,3249
+CHEMBL4895,Tyrosine-protein kinase receptor UFO,P30530,SINGLE PROTEIN,Homo sapiens,5083,13019
+CHEMBL258,Tyrosine-protein kinase Lck,P06239,SINGLE PROTEIN,Homo sapiens,6886,11854
+CHEMBL331,Cyclin-dependent kinase 4,P11802,SINGLE PROTEIN,Homo sapiens,2438,4376
+CHEMBL299,Protein kinase C alpha type,P17252,SINGLE PROTEIN,Homo sapiens,4076,6223
+CHEMBL4598,Serine/threonine-protein kinase 4,Q13043,SINGLE PROTEIN,Homo sapiens,1828,3790
+CHEMBL2695,Focal adhesion kinase 1,Q05397,SINGLE PROTEIN,Homo sapiens,4190,6272
+CHEMBL4247,ALK tyrosine kinase receptor,Q9UM73,SINGLE PROTEIN,Homo sapiens,4521,9751
+CHEMBL3863,Serine/threonine-protein kinase D1,Q15139,SINGLE PROTEIN,Homo sapiens,1250,2080
+CHEMBL5818,cAMP-dependent protein kinase catalytic subunit PRKX,P51817,SINGLE PROTEIN,Homo sapiens,1677,2373
+CHEMBL2343,Serine/threonine-protein kinase Sgk1,O00141,SINGLE PROTEIN,Homo sapiens,2149,4418
+CHEMBL3831,Serine/threonine-protein kinase MARK2,Q7KZI7,SINGLE PROTEIN,Homo sapiens,1847,2751
+CHEMBL3476,Inhibitor of nuclear factor kappa-B kinase subunit alpha,O15111,SINGLE PROTEIN,Homo sapiens,1940,3426
+CHEMBL5784,NUAK family SNF1-like kinase 1,O60285,SINGLE PROTEIN,Homo sapiens,1207,1913
+CHEMBL4901,Ephrin type-B receptor 3,P54753,SINGLE PROTEIN,Homo sapiens,1279,2046
+CHEMBL3982,Tyrosine-protein kinase Fer,P16591,SINGLE PROTEIN,Homo sapiens,1682,2550
+CHEMBL2742,Fibroblast growth factor receptor 3,P22607,SINGLE PROTEIN,Homo sapiens,6362,16788
+CHEMBL3045,Protein kinase C beta type,P05771,SINGLE PROTEIN,Homo sapiens,2012,4535
+CHEMBL4501,Ribosomal protein S6 kinase beta-1,P23443,SINGLE PROTEIN,Homo sapiens,3803,5957
+CHEMBL4898,BDNF/NT-3 growth factors receptor,Q16620,SINGLE PROTEIN,Homo sapiens,2630,4290
+CHEMBL4816,RAC-gamma serine/threonine-protein kinase,Q9Y243,SINGLE PROTEIN,Homo sapiens,2350,3314
+CHEMBL1957,Insulin-like growth factor 1 receptor,P08069,SINGLE PROTEIN,Homo sapiens,5791,8978
+CHEMBL3024,Serine/threonine-protein kinase PLK1,P53350,SINGLE PROTEIN,Homo sapiens,27354,29080
 CHEMBL2041,Proto-oncogene tyrosine-protein kinase receptor Ret,P07949,SINGLE PROTEIN,Homo sapiens,6484,78255
+CHEMBL2426,Casein kinase I isoform gamma-1,Q9HCP0,SINGLE PROTEIN,Homo sapiens,1776,2616
+CHEMBL1075167,Homeodomain-interacting protein kinase 4,Q8NE63,SINGLE PROTEIN,Homo sapiens,1343,1819
+CHEMBL2999,Serine/threonine-protein kinase PAK 3,O75914,SINGLE PROTEIN,Homo sapiens,944,1615
+CHEMBL4954,Ephrin type-A receptor 3,P29320,SINGLE PROTEIN,Homo sapiens,1011,1690
+CHEMBL2689,Macrophage-stimulating protein receptor,Q04912,SINGLE PROTEIN,Homo sapiens,1677,2505
+CHEMBL4601,Protein-tyrosine kinase 6,Q13882,SINGLE PROTEIN,Homo sapiens,1878,2914
+CHEMBL2637,Mitogen-activated protein kinase 10,P53779,SINGLE PROTEIN,Homo sapiens,3106,4553
+CHEMBL3116,Cyclin-dependent kinase 9,P50750,SINGLE PROTEIN,Homo sapiens,2791,5434
+CHEMBL4040,Mitogen-activated protein kinase 1,P28482,SINGLE PROTEIN,Homo sapiens,24506,38639
+CHEMBL1862,Tyrosine-protein kinase ABL1,P00519,SINGLE PROTEIN,Homo sapiens,8245,25804
+CHEMBL3961,Mitogen-activated protein kinase 11,Q15759,SINGLE PROTEIN,Homo sapiens,1843,2959
+CHEMBL2842,Serine/threonine-protein kinase mTOR,P42345,SINGLE PROTEIN,Homo sapiens,10265,17574
+CHEMBL262,Glycogen synthase kinase-3 beta,P49841,SINGLE PROTEIN,Homo sapiens,11278,24077
