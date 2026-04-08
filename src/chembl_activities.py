@@ -52,14 +52,3 @@ df_acts = pd.DataFrame(all_activities)
 df_acts.to_csv("data/db_final.csv", index = False)
 
 print(len(df_acts))
-
-# Comprovació de duplicats:
-duplicates_acts = df_acts.duplicated(
-    ['molecule_chembl_id', 'target_chembl_id', 'pchembl_value', 'standard_value', 'standard_type'],
-    keep = False).sum()
-
-print(duplicates_acts)
-
-# Eliminació dels duplicats:
-df_acts_assays = df_acts.drop_duplicates(
-    subset=['molecule_chembl_id', 'target_chembl_id', 'pchembl_value', 'standard_value', 'standard_type'])
