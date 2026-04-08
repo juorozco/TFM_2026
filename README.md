@@ -27,7 +27,7 @@ TFM/
 ├── src/                  
 │   ├── chembl_activities.py    # Codi de la descàrrega dels compostos, les activitats i l'assay_ID associats a cada target.
 │   ├── chembl_conf_score.py    # Codi de la descàrrega del confidence_score, l'assay_type i l'assay_ID associats a cada target. 
-|   └── merge_complete.py.      # Unió dels dos llistats obtinguts mitjançant el paràmetre assay_ID.
+|   └── merge_complete.py      # Unió dels dos llistats obtinguts mitjançant el paràmetre assay_ID.
 │
 ├── figures/              
 │   └── Boxplot_distribució_activitats.png
