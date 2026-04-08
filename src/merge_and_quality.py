@@ -6,7 +6,8 @@ import pandas as pd
 df_acts_assays = pd.read_csv("data/db_final.csv")
 df_conf_assays = pd.read_csv("data/conf_assays_types.csv")
 
-# MEDIANA PCHEMBL ABANS DEL MERGE:
+# Calcul de la mediana del valor pChEMBL per gestionar els duplicats:
+
 print(len(df_acts_assays)) # 525450 registres totals
 
 dup = ['molecule_chembl_id', 'target_chembl_id', 'assay_chembl_id']
