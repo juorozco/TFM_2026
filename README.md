@@ -13,23 +13,20 @@ Aquest repositori inclou el pipeline de descàrrega i preprocessament de les dad
 
 ## Estructura del repositori
 
-```text
-TFM/
-│
-├── data/
-│   ├── db.tsv/                 # Base de dades inicial descarregada de ChEMBL
-│   ├── db_filtered.csv/        # Dataset filtrat amb mínim 50 compostos i 700 activitats
-|   ├── db_final.csv/           # Dataset amb els compostos, les activitats i l'assay_ID
-|   ├── conf_assays_types.csv/  # Llistat de les cinases amb els confidence_score, l'assay_ID i l'assay_type
-│   └── db_complete.csv/        # Dataset amb tota la informació: molecule_chembl_id, pchembl_value, standard_type,       
-|                                 standard_value,target_chembl_id,assay_chembl_id,confidence_score,assay_type
-|
-├── src/                  
-│   ├── chembl_activities.py    # Codi de la descàrrega dels compostos, les activitats i l'assay_ID associats a cada target.
-│   ├── chembl_conf_score.py    # Codi de la descàrrega del confidence_score, l'assay_type i l'assay_ID associats a cada target. 
-|   └── merge_complete.py      # Unió dels dos llistats obtinguts mitjançant el paràmetre assay_ID.
-│
-├── figures/              
-│   └── Boxplot_distribució_activitats.png
-│
-└── README.md             
+
+data/
+   db.tsv/                 # Base de dades inicial descarregada de ChEMBL
+   db_filtered.csv/        # Dataset filtrat amb mínim 50 compostos i 700 activitats
+   db_final.csv/           # Dataset amb els compostos, les activitats i l'assay_ID
+   conf_assays_types.csv/  # Llistat de les cinases amb els confidence_score, l'assay_ID i l'assay_type
+   db_complete.csv/        # Dataset amb tota la informació: molecule_chembl_id, pchembl_value, standard_type,       
+                             standard_value,target_chembl_id,assay_chembl_id,confidence_score,assay_type
+src/                  
+   chembl_activities.py    # Codi de la descàrrega dels compostos, les activitats i l'assay_ID associats a cada target.
+   chembl_conf_score.py    # Codi de la descàrrega del confidence_score, l'assay_type i l'assay_ID associats a cada target. 
+   merge_complete.py       # Unió dels dos llistats obtinguts mitjançant el paràmetre assay_ID.
+
+figures/              
+   Boxplot_distribució_activitats.png
+
+README.md             
