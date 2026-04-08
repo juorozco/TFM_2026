@@ -6,7 +6,7 @@ Aquest projecte té com a objectiu entrenar i comparar dos models de ML per pred
 
 Aquest treball busca aportar un mètode robust per predir interaccions *off-target* en cinases, destacant la rellevància de la classificació *multi-Label* per identificar correlacions entre interaccions i efectes adversos. Els resultats proporcionaran eines útils per al disseny de fàrmacs més segurs i eficients en fases inicials del descobriment farmacològic.
 
-Les dades es recullen de la base de dades [ChEMBL](https://www.ebi.ac.uk/chembl/), desenvolupant-se models de ML amb Scikit-Learn i models de DL amb PyTorch, utilitzant una classificació *multi-Label* per predir les interaccions múltiples de cada compost. Els models es compararan mitjançant mètriques específiques per determinar quin enfocament ofereix millor rendiment predictiu.
+Les dades es recullen de la base de dades ChEMBL, desenvolupant-se models de ML amb Scikit-Learn i models de DL amb PyTorch, utilitzant una classificació *multi-Label* per predir les interaccions múltiples de cada compost. Els models es compararan mitjançant mètriques específiques per determinar quin enfocament ofereix millor rendiment predictiu.
 
 Aquest repositori inclou el pipeline de descàrrega i preprocessament de les dades dut a terme fins ara.
 ---
