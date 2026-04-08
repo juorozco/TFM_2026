@@ -38,7 +38,7 @@ print(counts)
 print(counts_assay)
 
 # Filtres:
-# confidence_score: només registres que tinguin igual i 
+# confidence_score: només registres que tinguin un valor de confiança del 9
 # assay_type: només assajos de binding i functional, els millors per als models de classificació
 df_complete = df_complete[(df_complete['confidence_score'] == 9) & 
                           (df_complete['assay_type'].isin(['B','F']))]
