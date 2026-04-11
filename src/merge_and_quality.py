@@ -2,8 +2,6 @@ from chembl_webresource_client.new_client import new_client
 import pandas as pd
 import numpy as np
 
-# Unió dels dos llistats obtinguts mitjançant el paràmetre assay_ID:
-
 df_acts_assays = pd.read_csv("data/db_final.csv")
 df_conf_assays = pd.read_csv("data/conf_assays_types.csv")
 
@@ -17,6 +15,8 @@ print(duplicates_acts_assays) # 36388 duplicats
 
 df_acts_median = df_acts_assays.groupby(dup, as_index = False)['pchembl_value'].median()
 print(len(df_acts_median)) # 506142 despres de la mediana
+
+# Unió dels dos llistats obtinguts mitjançant el paràmetre assay_ID:
 
 df_complete = df_acts_median.merge(
     df_conf_assays,
