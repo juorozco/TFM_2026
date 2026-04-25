@@ -52,3 +52,4 @@ df_acts = pd.DataFrame(all_activities)
 df_acts.to_csv("data/partials/db_final.csv", index = False)
 
 print(len(df_acts))
+#
