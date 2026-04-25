@@ -1,39 +1,52 @@
 import pandas as pd
 import numpy as np
 
-df_fingerP = pd.read_csv("db_with_fingerprints.csv") # arxiu final amb les dades
-df_fingerP = df_fingerP.drop(columns=["mol_valid"])  # eliminació de la columna que no interessa (mol_valid)
+df_smiles = pd.read_csv("data/chembl_smiles.csv") # arxiu amb les molècules que tenen smiles vàlids
+db_complete = pd.read_csv("data/db_complete.csv") # arxiu final amb les dades
+
+valid_mols = set(df_smiles["molecule_chembl_id"]) # detecció de les molècules vàlides perquè el total no coincideix
+db_complete = db_complete[db_complete["molecule_chembl_id"].isin(valid_mols)] # agafa només les que estan a df_smiles i són vàlides
 
 # Canvi de active/inactive per 1/0:
-df_fingerP = df_fingerP.replace({
+db_complete = db_complete.replace({
     "active": 1,
     "inactive": 0
 })
 
-print(df_fingerP.duplicated().sum()) # 0 duplicats
+print(db_complete.duplicated().sum()) # 0 duplicats
 
-# Canvi de forma per crear la matriu multi-label
+# Canvi de forma (long to wide) per crear la matriu multi-label
 df_matrix = pd.crosstab(
-    df_fingerP["molecule_chembl_id"],
-    df_fingerP["target_chembl_id"],
-    values=df_fingerP["activity_type"],
+    db_complete["molecule_chembl_id"],
+    db_complete["target_chembl_id"],
+    values=db_complete["activity_type"],
     aggfunc="max"
 )
 
-df_matrix.to_csv("df_matrix.csv")
+df_matrix.to_csv("data/df_matrix.csv")
 
 print(len(df_matrix)) # la taula girada te 169133 files, que és el total de molècules del dataset
-print(df_fingerP["molecule_chembl_id"].nunique()) # mateix nombre de molècules, correcte.
+print(db_complete["molecule_chembl_id"].nunique()) # mateix nombre de molècules, correcte.
 
-X = np.load("morgan_fingerprints.npy")
-print(X.shape) # s'ha de canviar perque les files corresponguin al total de molècules del dataset igual que df_matrix
-
+# El dataset és sparse:
 print(df_matrix.isna().sum().sum())
 total_values = df_matrix.shape[0] * df_matrix.shape[1]
 nan_values = df_matrix.isna().sum().sum()
-
 print("Sparsity (% NaN):", round(nan_values / total_values * 100, 2))
 
-counts = df_matrix.sum(axis=0)
+mol_order = df_smiles["molecule_chembl_id"].values
+df_matrix = df_matrix.reindex(mol_order)
+Y = df_matrix.values
+mol_order = df_matrix.index.values
 
-print((counts < 50).sum())
+# Preparació de X per a la matriu:
+X = np.load("data/morgan_fingerprints.npy")
+print(X.shape) # les files han de correspondre al total de molècules del dataset igual que df_matrix
+
+# Ordre de les molècules (ha de ser el mateix):
+
+assert X.shape[0] == Y.shape[0]
+
+print("✔ X shape:", X.shape)
+print("✔ Y shape:", Y.shape)
+print("✔ ALIGNMENT OK")
