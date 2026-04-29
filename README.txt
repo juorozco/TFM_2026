@@ -29,4 +29,4 @@ src/
 figures/              
    Boxplot_distribució_activitats.png
 
-README.md             
+README.txt             

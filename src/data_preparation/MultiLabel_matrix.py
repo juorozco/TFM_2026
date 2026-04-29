@@ -36,8 +36,11 @@ print("Sparsity (% NaN):", round(nan_values / total_values * 100, 2))
 
 mol_order = df_smiles["molecule_chembl_id"].values
 df_matrix = df_matrix.reindex(mol_order)
-Y = df_matrix.values
+Y = df_matrix.values.astype(np.float32)
 mol_order = df_matrix.index.values
+
+np.save("data/Y_matrix.npy", Y)
+print("✔ Y shape:", Y.shape)
 
 # Preparació de X per a la matriu:
 X = np.load("data/morgan_fingerprints.npy")
