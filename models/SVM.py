@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 X = np.load("data/morgan_fingerprints.npy") # matriu amb els descriptors moleculars
 Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
-# Partició de dades en 70/30:
+# Random split en 70/30:
 mol_idx = np.arange(X.shape[0])
 train_idx, test_idx = train_test_split(mol_idx, test_size = 0.3, random_state = 42, shuffle = True)
 
