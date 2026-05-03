@@ -47,7 +47,7 @@ plt.xlabel('pChEMBL')
 plt.ylabel('Nombre de registres')
 plt.legend()
 plt.tight_layout()
-plt.savefig("figures/pchembl_distribution.png", dpi = 300)
+plt.savefig("figures/distribució_pchembl.png", dpi = 300)
 plt.show()
 
 # Classificació actius/inactius segons valor pChEMBL:
