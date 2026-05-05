@@ -1,62 +1,37 @@
 import numpy as np
-import pandas as pd
-from rdkit import Chem
-from rdkit.Chem.Scaffolds import MurckoScaffold
+from scaffold_split import scaffold_split
 from sklearn.svm import LinearSVC
-from sklearn.metrics import roc_auc_score
-from sklearn.model_selection import train_test_split
+from sklearn.metrics import roc_auc_score, average_precision_score
+from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
 X = np.load("data/morgan_fingerprints.npy") # matriu amb els descriptors moleculars
-Y = np.load("data/Y_matrix.npy") # matriu amb els descriptors moleculars
-df_smiles = pd.read_csv("data/chembl_smiles.csv") # arxiu amb els SMILES
+Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
-# Descàrrega dels scaffolds:
-def get_scaffold(smiles):
-    try:
-        mol = Chem.MolFromSmiles(smiles)
-        if mol is None:
-            return None
-        return MurckoScaffold.MurckoScaffoldSmiles(mol = mol)
-    except:
-        return None
-
-df_smiles["scaffold"] = df_smiles["canonical_smiles"].apply(get_scaffold)
-
-mask = df_smiles["scaffold"].notnull()
-df_smiles = df_smiles[mask].reset_index(drop = True)
-X = X[mask.values]
-Y = Y[mask.values]
-
-print(len(df_smiles))
-print(df_smiles["scaffold"].nunique())
-
-# Scaffold split en 70/30:
-scaffolds = df_smiles["scaffold"].unique()
-train_scaffold, test_scaffold = train_test_split(scaffolds, test_size = 0.3, random_state = 42, shuffle = True)
-
-train_idx = df_smiles.index[df_smiles["scaffold"].isin(train_scaffold)].values
-test_idx  = df_smiles.index[df_smiles["scaffold"].isin(test_scaffold)].values
+train, test = scaffold_split("data/chembl_smiles.csv", test_size = 0.2)
 
 targets = Y.shape[1]
 
-auc_values = []
-auc_train_values = []
+roc_auc_scores = []
+pr_auc_scores = []
+bedroc_scores = []
+enrich_factor = []
 svm_models = {}
+
 nonvalid_targets = 0
 
 # Model LinearSVC amb scaffold split:
 for target in range(targets):
 
-    total_y_train = Y[train_idx, target]
-    total_y_test = Y[test_idx, target]
+    total_y_train = Y[train, target]
+    total_y_test = Y[test, target]
 
     train_mask = ~np.isnan(total_y_train)
     test_mask  = ~np.isnan(total_y_test)
 
-    X_train = X[train_idx][train_mask]
+    X_train = X[train][train_mask]
     y_train = total_y_train[train_mask]
 
-    X_test = X[test_idx][test_mask]
+    X_test = X[test][test_mask]
     y_test = total_y_test[test_mask]
 
     if len(y_train) < 100:  # mínim de 100 observacions
@@ -70,13 +45,25 @@ for target in range(targets):
     SVM_scaffold_model = LinearSVC(C = 1.0, class_weight = "balanced", max_iter = 5000)
     SVM_scaffold_model.fit(X_train, y_train)
 
-    auc_values.append(roc_auc_score(y_test, SVM_scaffold_model.decision_function(X_test)))
-    auc_train_values.append(roc_auc_score(y_train, SVM_scaffold_model.decision_function(X_train)))
+    scores = SVM_scaffold_model.decision_function(X_test)
 
     svm_models[target] = SVM_scaffold_model
 
+    # ROC_AUC / PR_AUC:
+    roc_auc_scores.append(roc_auc_score(y_test, scores))
+    pr_auc_scores.append(average_precision_score(y_test, scores))
+
+    # Array ordenat per score descendent:
+    order = np.argsort(-scores)
+    scores_array = np.column_stack([scores[order], y_test[order]])
+
+    bedroc_scores.append(CalcBEDROC(scores_array, col = 1, alpha = 20.0))
+    enrich_factor.append(CalcEnrichment(scores_array, col = 1, fractions = [0.01])[0])
+
 # Resultats:
-print("Mitjana ROC-AUC test =", np.mean(auc_values)) # 0.79
-print("Coverage =", len(auc_values) / targets * 100, "%") # 54.72%
-print("GAP =", np.mean(auc_train_values) - np.mean(auc_values)) # 0.21
-print("Percentils test valors AUC:", np.percentile(auc_values, [0, 25, 50, 75, 100])) # [0.17 0.74 0.80 0.86 0.98]
+print("Mean ROC-AUC:", np.mean(roc_auc_scores))
+print("Mean PR-AUC:", np.mean(pr_auc_scores))
+print("Mean BEDROC:", np.nanmean(bedroc_scores))
+print("Mean EF@1%:", np.nanmean(enrich_factor))
+print("STD ROC-AUC:", np.std(roc_auc_scores))
+print("Targets evaluated:", len(roc_auc_scores))
