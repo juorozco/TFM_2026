@@ -5,13 +5,15 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
+# Càrrega de dades:
 X = np.load("data/morgan_fingerprints.npy") # matriu amb els descriptors moleculars
 Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
-# Random split:
+# Partició:
 mol_idx = np.arange(X.shape[0])
 train, test = train_test_split(mol_idx, test_size = 0.2, random_state = 42, shuffle = True)
 
+# Mètriques:
 targets = Y.shape[1]
 
 roc_auc_scores = []
@@ -22,7 +24,7 @@ svm_models = {}
 
 nonvalid_targets = 0
 
-# Model LinearSVC:
+# Model SVM:
 for target in range(targets):
 
     total_y_train = Y[train, target]
@@ -52,11 +54,10 @@ for target in range(targets):
 
     svm_models[target] = SVM_model
 
-    # ROC_AUC / PR_AUC:
+
     roc_auc_scores.append(roc_auc_score(y_test, scores))
     pr_auc_scores.append(average_precision_score(y_test, scores))
 
-    # Array ordenat per score descendent:
     order = np.argsort(-scores)
     scores_array = np.column_stack([scores[order], y_test[order]])
 

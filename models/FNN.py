@@ -8,7 +8,7 @@ from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 import random
 
-# Seed per reproduïbilitat:
+# Reproduïbilitat:
 seed = 42
 random.seed(seed)
 np.random.seed(seed)
@@ -17,7 +17,7 @@ torch.cuda.manual_seed_all(seed)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
-# Càrrega de dades i conversió a tensors:
+# Càrrega de dades:
 X = np.load("data/morgan_fingerprints.npy") # matriu amb els descriptors moleculars
 Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
@@ -26,9 +26,9 @@ mol_idx = np.arange(X.shape[0])
 train_val_idx, test_idx = train_test_split(mol_idx, test_size = 0.20, random_state = 42)
 train_idx, val_idx = train_test_split(train_val_idx, test_size = 0.125, random_state = 42)
 
-# Conversió a tensors:
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
+# Conversió a tensors:
 X_train = torch.from_numpy(X[train_idx].astype(np.float32)).float()
 Y_train = torch.from_numpy(Y[train_idx].astype(np.float32)).float()
 X_val = torch.from_numpy(X[val_idx].astype(np.float32)).float()
@@ -48,35 +48,35 @@ class FeedForward_NN(nn.Module):
         self.net = nn.Sequential(               # capes seqüencials
             nn.Linear(input_dim, 1024),         # primera capa desde total de bits
             nn.ReLU(),                          # funció d'activació
-            nn.Dropout(0.25),                    # regularització amb dropout per millorar l'overfitting
+            nn.Dropout(0.25),                   # regularització amb dropout per millorar l'overfitting
 
             nn.Linear(1024, 512),               # segona capa
             nn.ReLU(),
             nn.Dropout(0.25),
 
-            nn.Linear(512, output_dim)          # tercera capa fins mida dels targets. Probabilitat d'activitat per cinasa
+            nn.Linear(512, output_dim)          # tercera capa fins mida dels targets.
         )
 
-    def forward(self, input):                   # funció que defineix que la NN sigui feedforward
+    def forward(self, input):                   # Xarxa feedforward
         return self.net(input)
 
-FNN_model = FeedForward_NN(2048, 318).to(device)        # aplicació de la classe al model
+FNN_model = FeedForward_NN(2048, 318).to(device)      # aplicació de la classe al model
 
 # Funció mask:
 def masked_loss(prediction, target):                  # càlcul del l'error del model ignorant els valors NaN amb mask
-    mask = ~torch.isnan(target)                       # valors vàlids o reals
+    mask = ~torch.isnan(target)                       
 
-    loss = nn.BCEWithLogitsLoss(reduction = 'none')   # funció per calcular el loss amb none i Binary Cross Entropy
-    loss_value = loss(prediction, torch.nan_to_num(target)) # càlcul de l'error per a cada predicció
+    loss = nn.BCEWithLogitsLoss(reduction = 'none')   # funció per calcular el loss amb none + Binary Cross Entropy
+    loss_value = loss(prediction, torch.nan_to_num(target)) 
 
-    masked_loss = loss_value * mask                   # elimina la repercusió de les dades NaN
+    masked_loss = loss_value * mask                   
 
-    if mask.sum() == 0:                               # si en algun batch no hi ha cap target vàlid, loss = 0
+    if mask.sum() == 0:                               
         return torch.zeros((), device = prediction.device, requires_grad = True)
 
     return masked_loss.sum() / mask.sum()             # mitjana de loss només dels valors vàlids
 
-# Funció d'avaluació
+# Funció per al càlcul de les mètriques d'avaluació:
 def evaluate(loader):
     FNN_model.eval()
 
@@ -107,13 +107,13 @@ def evaluate(loader):
         true_target_label = true_target_label[mask]
         target_probs = target_probs[mask]
 
-        if len(np.unique(true_target_label)) < 2: # Han d'estar les dues classes
+        if len(np.unique(true_target_label)) < 2:              # Han d'estar les dues classes
             continue
 
         roc_auc_scores.append(roc_auc_score(true_target_label, target_probs))
         pr_auc_scores.append(average_precision_score(true_target_label, target_probs))
 
-        # Array ordenat per score descendent:
+        # Array ordenat per score descendent pel càlcul de bedroc i EF1%:
         order = np.argsort(-target_probs)
         scores_array = np.column_stack([target_probs[order], true_target_label[order]])
 
@@ -128,10 +128,10 @@ def evaluate(loader):
         "Targets": len(roc_auc_scores)
     }
 
-# Optimitzador Adam:
-optimizer = torch.optim.Adam(FNN_model.parameters(), lr = 1e-4, weight_decay = 1e-4) # Optimitzador Adam amb learning rate de 1e-4.
+# Optimitzador Adam amb learning rate de 1e-4:
+optimizer = torch.optim.Adam(FNN_model.parameters(), lr = 1e-4, weight_decay = 1e-4)
 
-# Entrenament del model
+# Entrenament del model:
 epochs = 100
 best_auc = 0
 patience = 10
@@ -164,8 +164,9 @@ for epoch in range(epochs):
 
         total_loss += loss_values.item()
 
- # Avaluació
-    results_val = evaluate(val_loader)                 # avaluació sobre el conjunt de test
+ # Avaluació:
+    results_val = evaluate(val_loader)                      
+    
     print(
         f"Epoch {epoch} | Loss: {total_loss:.4f} | "
         f"ROC-AUC: {results_val['AUC']:.4f} | "
@@ -173,7 +174,7 @@ for epoch in range(epochs):
         f"BEDROC: {results_val['BEDROC']:.4f} | "
         f"EF1%: {results_val['EF1%']:.4f}")
 
-    # early stopping
+# Early Stopping:
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0

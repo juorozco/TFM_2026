@@ -20,6 +20,7 @@ torch.backends.cudnn.benchmark = False
 X = np.load("data/morgan_fingerprints.npy").astype(np.float32)
 Y = np.load("data/Y_matrix.npy").astype(np.float32)
 
+# Partició:
 train, val, test = scaffold_split("data/chembl_smiles.csv", val_size = 0.10, test_size = 0.20)
 
 X_train, X_val, X_test = X[train], X[val], X[test]
@@ -62,21 +63,20 @@ class FeedForward_NN(nn.Module):
 FNN_scaffold_model = FeedForward_NN(2048, Y_train.shape[1]).to(device)
 
 # Funció mask:
+def masked_loss(prediction, target):                 
+    mask = ~torch.isnan(target)                      
 
-def masked_loss(prediction, target):                  # càlcul del l'error del model ignorant els valors NaN amb mask
-    mask = ~torch.isnan(target)                       # valors vàlids
+    loss = nn.BCEWithLogitsLoss(reduction = 'none')  
+    loss_value = loss(prediction, torch.nan_to_num(target)) 
 
-    loss = nn.BCEWithLogitsLoss(reduction = 'none')   # funció per calcular el loss amb none i Binary Cross Entropy
-    loss_value = loss(prediction, torch.nan_to_num(target)) # càlcul de l'error per a cada predicció
+    masked_loss = loss_value * mask                   
 
-    masked_loss = loss_value * mask                   # eliminació dels errors que corresponen a valors NaN
-
-    if mask.sum() == 0:                               # si en algun batch no hi ha cap target vàlid, loss = 0
+    if mask.sum() == 0:                               
         return torch.zeros((), device = prediction.device, requires_grad = True)
 
     return masked_loss.sum() / mask.sum()
 
-# Funció d'avaluació:
+# Funció per al càlcul de les mètriques d'avaluació:
 def evaluate(loader):
     FNN_scaffold_model.eval()
 
@@ -86,7 +86,7 @@ def evaluate(loader):
     with torch.no_grad():
         for x_batch, y_batch in loader:
             x_batch = x_batch.to(device)
-            preds = torch.sigmoid(FNN_scaffold_model(x_batch)).cpu()   # conversió a probabilitats amb sigmoid
+            preds = torch.sigmoid(FNN_scaffold_model(x_batch)).cpu() 
 
             total_preds.append(preds)
             y_true_labels.append(y_batch)
@@ -107,13 +107,12 @@ def evaluate(loader):
         true_target_label = true_target_label[mask]
         target_probs = target_probs[mask]
 
-        if len(np.unique(true_target_label)) < 2: # Han d'estar les dues classes
+        if len(np.unique(true_target_label)) < 2: 
             continue
 
         roc_auc_scores.append(roc_auc_score(true_target_label, target_probs))
         pr_auc_scores.append(average_precision_score(true_target_label, target_probs))
 
-        # Array ordenat per score descendent:
         order = np.argsort(-target_probs)
         scores_array = np.column_stack([target_probs[order], true_target_label[order]])
 
@@ -128,7 +127,7 @@ def evaluate(loader):
         "Targets": len(roc_auc_scores)
     }
 
-# Optimitzador Adam:
+# Optimitzador Adam amb learning rate de 1e-4:
 optimizer = torch.optim.Adam(FNN_scaffold_model.parameters(), lr = 1e-4, weight_decay = 1e-4)
 
 # Entrenament del model:
@@ -147,7 +146,7 @@ for epoch in range(epochs):
         X_batch = X_batch.to(device)
         Y_batch = Y_batch.to(device)
 
-        valid_data = (~torch.isnan(Y_batch)).sum(dim = 1) > 0 # elimina compostos que no interaccionin amb cap target
+        valid_data = (~torch.isnan(Y_batch)).sum(dim = 1) > 0 
         X_batch = X_batch[valid_data]
         Y_batch = Y_batch[valid_data]
 
@@ -164,8 +163,8 @@ for epoch in range(epochs):
 
         total_loss += loss_values.item()
 
- # Avaluació
-    results_val = evaluate(val_loader)                 # avaluació sobre el conjunt de test
+ # Avaluació:
+    results_val = evaluate(val_loader)               
 
     print(
         f"Epoch {epoch} | Loss: {total_loss:.4f} | "
@@ -174,7 +173,7 @@ for epoch in range(epochs):
         f"BEDROC: {results_val['BEDROC']:.4f} | "
         f"EF1%: {results_val['EF1%']:.4f}")
 
-    # early stopping
+# Early Stopping:
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0
