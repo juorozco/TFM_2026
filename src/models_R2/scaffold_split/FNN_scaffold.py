@@ -1,6 +1,8 @@
 import numpy as np
 import torch
 import torch.nn as nn
+import sys
+sys.path.append("src")
 from scaffold_split import scaffold_split
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.metrics import roc_auc_score, average_precision_score
@@ -17,7 +19,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # Càrrega de dades
-X = np.load("models_R3/Data_R3/morgan_fingerprints_R3.npy").astype(np.float32)
+X = np.load("data/morgan_fingerprints.npy").astype(np.float32)
 Y = np.load("data/Y_matrix.npy").astype(np.float32)
 
 # Partició:
@@ -177,7 +179,7 @@ for epoch in range(epochs):
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0
-        torch.save(FNN_scaffold_model.state_dict(), "models_R3/best_FNN_scaffold_R3.pt")
+        torch.save(FNN_scaffold_model.state_dict(), "models/best_FNN_scaffold.pt")
     else:
         no_improve += 1
 
@@ -185,7 +187,7 @@ for epoch in range(epochs):
         print("Early stopping")
         break
 
-FNN_scaffold_model.load_state_dict(torch.load("models_R3/best_FNN_scaffold_R3.pt"))
+FNN_scaffold_model.load_state_dict(torch.load("models/best_FNN_scaffold.pt"))
 results_test = evaluate(test_loader) 
 
 # Resultats:

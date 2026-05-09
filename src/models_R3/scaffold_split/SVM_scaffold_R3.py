@@ -1,4 +1,6 @@
 import numpy as np
+import sys
+sys.path.append("src")
 from scaffold_split import scaffold_split
 from sklearn.svm import LinearSVC
 from sklearn.metrics import roc_auc_score, average_precision_score
