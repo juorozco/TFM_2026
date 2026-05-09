@@ -1,6 +1,6 @@
-
 data/*.csv
+!data/chembl_smiles.csv
 data/*.npy
 __pycache__/
 *.pyc
-.env!data/chembl_smiles.csv
+.env
