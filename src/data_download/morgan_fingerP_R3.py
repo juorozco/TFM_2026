@@ -35,5 +35,4 @@ print(type(MGFP[0]))
 
 df_smiles = df_smiles.drop(columns=["mol_valid"])  # eliminació de la columna que no interessa (mol_valid)
 
-np.save("Radi_3/morgan_fingerprints_R3.npy", MGFP)
-df_smiles.to_csv("Radi_3/db_smiles_R3.csv", index = False)
+np.save("data/morgan_fingerprints_R3.npy", MGFP)

@@ -178,7 +178,7 @@ for epoch in range(epochs):
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0
-        torch.save(FNN_model.state_dict(), "models/best_FNN_model.pt")
+        torch.save(FNN_model.state_dict(), "src/best_models/best_FNN_model.pt")
     else:
         no_improve += 1
 
@@ -186,7 +186,7 @@ for epoch in range(epochs):
         print("Early stopping")
         break
 
-FNN_model.load_state_dict(torch.load("models/best_FNN_model.pt"))
+FNN_model.load_state_dict(torch.load("src/best_models/best_FNN_model.pt"))
 results_test = evaluate(test_loader) 
 
 # Resultats:

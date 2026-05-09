@@ -2,7 +2,7 @@ from chembl_webresource_client.new_client import new_client
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("data/db.tsv", sep = '\t')  # carrega de les dades extretes de la web de ChEMBL 
+data = pd.read_csv("data/partials/db.tsv", sep = '\t')  # carrega de les dades extretes de la web de ChEMBL 
 print(data.head())
 
 data = data.drop(columns = ['Species Group Flag', 'Tax ID']) # Neteja de les dues columnes que no es necessiten

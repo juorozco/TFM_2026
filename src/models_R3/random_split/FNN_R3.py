@@ -18,7 +18,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # Càrrega de dades:
-X = np.load("models_R3/Data_R3/morgan_fingerprints_R3.npy") # matriu amb els descriptors moleculars
+X = np.load("data/morgan_fingerprints_R3.npy") # matriu amb els descriptors moleculars
 Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
 # Partició:
@@ -178,7 +178,7 @@ for epoch in range(epochs):
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0
-        torch.save(FNN_model.state_dict(), "models_R3/best_FNN_model_R3.pt")
+        torch.save(FNN_model.state_dict(), "src/best_models/best_FNN_model_R3.pt")
     else:
         no_improve += 1
 
@@ -186,7 +186,7 @@ for epoch in range(epochs):
         print("Early stopping")
         break
 
-FNN_model.load_state_dict(torch.load("models_R3/best_FNN_model_R3.pt"))
+FNN_model.load_state_dict(torch.load("src/best_models/best_FNN_model_R3.pt"))
 results_test = evaluate(test_loader) 
 
 # Resultats:

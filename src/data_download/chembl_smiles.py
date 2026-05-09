@@ -46,4 +46,4 @@ df_morgan = df_complete.merge(
 print(df_morgan.head(5))
 print(len(df_morgan))
 
-df_morgan.to_csv("data/db_for_morgan.csv")
+df_morgan.to_csv("data/partials/db_for_morgan.csv")

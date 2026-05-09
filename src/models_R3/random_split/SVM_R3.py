@@ -6,7 +6,7 @@ from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
 # Càrrega de dades:
-X = np.load("models_R3/Data_R3/morgan_fingerprints_R3.npy") # matriu amb els descriptors moleculars
+X = np.load("data/morgan_fingerprints_R3.npy") # matriu amb els descriptors moleculars
 Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
 # Partició:
