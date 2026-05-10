@@ -17,8 +17,9 @@ plt.figure()
 data_compounds['Activities'].plot(kind = 'box')
 plt.title("Activities")
 plt.ylabel("Activities")
-plt.show() # El boxplot mostra que les cinases amb menys activitats associades són les que tenen menys de 700.
 plt.savefig("figures/Boxplot_acts_filter.png")
+plt.show() # El boxplot mostra que les cinases amb menys activitats associades són les que tenen menys de 700.
+
 
 # Es decideix eliminar els targets amb menys de 700 activitats. 
 # Els que tenen moltes activitats associades són targets importants i, encara que siguin outliers, es conserven.
