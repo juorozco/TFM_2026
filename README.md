@@ -25,47 +25,50 @@ All models are evaluated using ROC-AUC, PR-AUC, BEDROC (α = 20) and Enrichment 
 ## Repository Structure
 ---
 
+## Repository Structure
+
+```
 TFM/
 ├── data/
-│   ├── partials/                  # Intermediate data files
-│   ├── chembl_smiles.csv          # Final SMILES dataset
-│   ├── db_complete.csv            # Processed activity dataset
-│   ├── morgan_fingerprints.npy    # Morgan fingerprints radius 2
-│   ├── morgan_fingerprints_R3.npy # Morgan fingerprints radius 3 
-│   └── Y_matrix.npy               # Binary activity matrix
+│   ├── partials/                   # Intermediate data files
+│   ├── chembl_smiles.csv           # Final SMILES dataset
+│   ├── db_complete.csv             # Processed activity dataset
+│   ├── morgan_fingerprints.npy     # Morgan fingerprints radius 2 (Zenodo)
+│   ├── morgan_fingerprints_R3.npy  # Morgan fingerprints radius 3 (Zenodo)
+│   └── Y_matrix.npy                # Binary activity matrix (Zenodo)
 ├── figures/
 │   ├── Boxplot_acts_filter.png
-│   └── distribució_pchembl.png
+│   └── distribucio_pchembl.png
 ├── src/
-|   ├── best_models/
+│   ├── best_models/                # Trained model files (.pt, .pkl)
 │   ├── data_download/
-│   │   ├── chembl_activities.py   # Download bioactivity data from ChEMBL
-│   │   ├── chembl_conf_score.py   # Download assay confidence scores
-│   │   ├── chembl_smiles.py       # Download SMILES for compounds
-│   │   ├── morgan_fingerP.py      # Generate Morgan fingerprints (radius 2)
-│   │   └── morgan_fingerP_R3.py   # Generate Morgan fingerprints (radius 3)
+│   │   ├── chembl_activities.py    # Download bioactivity data from ChEMBL
+│   │   ├── chembl_conf_score.py    # Download assay confidence scores
+│   │   ├── chembl_smiles.py        # Download SMILES for compounds
+│   │   ├── morgan_fingerP.py       # Generate Morgan fingerprints (radius 2)
+│   │   └── morgan_fingerP_R3.py    # Generate Morgan fingerprints (radius 3)
 │   ├── data_preparation/
-│   │   ├── merge_and_quality.py   # Merge datasets and apply quality filters
-│   │   └── multilabel_matrix.py   # Binary activity matrix
-│   ├── models_R2/                 # Models with radius = 2
+│   │   ├── merge_and_quality.py    # Merge datasets and apply quality filters
+│   │   └── multilabel_matrix.py    # Build binary activity matrix
+│   ├── models_R2/                  # Models with radius = 2
 │   │   ├── random_split/
-│   │   │   ├── SVM_random.py      # SVM with random split
-│   │   │   └── FNN_random.py      # FNN with random split
+│   │   │   ├── SVM_random.py
+│   │   │   └── FNN_random.py
 │   │   └── scaffold_split/
-│   │       ├── SVM_scaffold.py    # SVM with scaffold split
-│   │       └── FNN_scaffold.py    # FNN with scaffold split
-│   ├── models_R3/                 # Models with radius = 3
+│   │       ├── SVM_scaffold.py
+│   │       └── FNN_scaffold.py
+│   ├── models_R3/                  # Models with radius = 3
 │   │   ├── random_split/
-│   │   │   ├── SVM_R3.py          # SVM with random split (radius 3)
-│   │   │   └── FNN_R3.py          # FNN with random split (radius 3)
+│   │   │   ├── SVM_R3.py
+│   │   │   └── FNN_R3.py
 │   │   └── scaffold_split/
-│   │       ├── SVM_scaffold_R3.py # SVM with scaffold split (radius 3)
-│   │       └── FNN_scaffold_R3.py # FNN with scaffold split (radius 3)
-│   └── scaffold_split.py          # Scaffold split function (shared)
-├── .gitattributes
+│   │       ├── SVM_scaffold_R3.py
+│   │       └── FNN_scaffold_R3.py
+│   └── scaffold_split.py
 ├── .gitignore
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── README.md
+```
 
 ## Author
 
