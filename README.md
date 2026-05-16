@@ -70,4 +70,4 @@ TFM/
 ## Author
 
 **Judith Orozco**
-Master's Thesis — UB & Universitat Oberta de Catalunya (UOC), 2026
+— UB & Universitat Oberta de Catalunya (UOC), 2026
