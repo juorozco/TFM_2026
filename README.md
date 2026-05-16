@@ -1,5 +1,5 @@
 # Off-Target Activity Prediction Across Human Kinases
-### A Comparative Study of SVM and Feedforward Neural Networks Using ChEMBL Bioactivity Data
+### A Comparative Study of Support Vector Machine, Random Forest and Feedforward Neural Networks Using ChEMBL Bioactivity Data
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0-red)
@@ -14,7 +14,7 @@
 This repository contains the code and data for the Master's Thesis (TFM) on predicting off-target interactions of chemical compounds across 318 human kinases using bioactivity data from the ChEMBL database.
 
 Two model types are compared under two data splitting strategies:
-- **Support Vector Machine (SVM)** — trained independently per kinase (Scikit-Learn)
+- **Support Vector Machine (SVM) and Random Forest (RF)** — trained independently per kinase (Scikit-Learn)
 - **Feedforward Neural Network (FNN)** — multi-task, trained simultaneously on all targets (PyTorch)
 - **Random split** and **Scaffold split** (Bemis–Murcko)
 
@@ -37,7 +37,7 @@ TFM/
 │   ├── Boxplot_acts_filter.png
 │   └── distribucio_pchembl.png
 ├── src/
-│   ├── best_models/                # Trained model files (.pt, .pkl)
+│   ├── best_models/                # Best trained model files (.pt, .pkl)
 │   ├── data_download/
 │   │   ├── chembl_activities.py    # Download bioactivity data from ChEMBL
 │   │   ├── chembl_conf_score.py    # Download assay confidence scores
@@ -70,4 +70,4 @@ TFM/
 ## Author
 
 **Judith Orozco**
-Master's Thesis — Universitat Oberta de Catalunya (UOC), 2026
+Master's Thesis — UB & Universitat Oberta de Catalunya (UOC), 2026

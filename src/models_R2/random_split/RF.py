@@ -1,8 +1,7 @@
 import numpy as np
-import pandas as pd
 import joblib
 from sklearn.model_selection import train_test_split
-from sklearn.svm import LinearSVC
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
@@ -12,7 +11,7 @@ Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
 
 # Partició:
 mol_idx = np.arange(X.shape[0])
-train, test = train_test_split(mol_idx, test_size = 0.2, random_state = 42, shuffle = True)
+train, test = train_test_split(mol_idx, test_size = 0.20, random_state = 42, shuffle = True)
 
 # Mètriques:
 targets = Y.shape[1]
@@ -21,11 +20,11 @@ roc_auc_scores = []
 pr_auc_scores = []
 bedroc_scores = []
 enrich_factor = []
-svm_models = {}
+rf_models = {}
 
 nonvalid_targets = 0
 
-# Model SVM:
+# Model RF:
 for target in range(targets):
 
     total_y_train = Y[train, target]
@@ -36,7 +35,6 @@ for target in range(targets):
 
     X_train = X[train][train_mask]
     y_train = total_y_train[train_mask]
-
     X_test = X[test][test_mask]
     y_test = total_y_test[test_mask]
 
@@ -48,13 +46,12 @@ for target in range(targets):
         nonvalid_targets += 1
         continue
 
-    SVM_model = LinearSVC(C = 1.0, class_weight = "balanced", max_iter = 5000)
-    SVM_model.fit(X_train, y_train)
+    RF_model = RandomForestClassifier(n_estimators = 100, class_weight = 'balanced', random_state = 42, n_jobs =- 1)
+    RF_model.fit(X_train, y_train)
 
-    scores = SVM_model.decision_function(X_test)
+    scores = RF_model.predict_proba(X_test)[:, 1]
 
-    svm_models[target] = SVM_model
-
+    rf_models[target] = RF_model
 
     roc_auc_scores.append(roc_auc_score(y_test, scores))
     pr_auc_scores.append(average_precision_score(y_test, scores))
@@ -73,4 +70,4 @@ print("Mean EF@1%:", np.nanmean(enrich_factor))
 print("STD ROC-AUC:", np.std(roc_auc_scores))
 print("Targets evaluated:", len(roc_auc_scores))
 
-joblib.dump(svm_models, "src/best_models/best_SVM_model.pkl")
+joblib.dump(rf_models, "src/best_models/best_RF_model.pkl")

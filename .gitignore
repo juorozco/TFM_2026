@@ -4,3 +4,4 @@ data/*.npy
 __pycache__/
 *.pyc
 .env
+src/best_models/*.pkl
