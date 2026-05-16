@@ -13,7 +13,7 @@
 
 This repository contains the code and data for the Master's Thesis (TFM) on predicting off-target interactions of chemical compounds across 318 human kinases using bioactivity data from the ChEMBL database.
 
-Two model types are compared under two data splitting strategies:
+Three model types are compared under two data splitting strategies:
 - **Support Vector Machine (SVM) and Random Forest (RF)** — trained independently per kinase (Scikit-Learn)
 - **Feedforward Neural Network (FNN)** — multi-task, trained simultaneously on all targets (PyTorch)
 - **Random split** and **Scaffold split** (Bemis–Murcko)
@@ -30,14 +30,14 @@ TFM/
 │   ├── partials/                   # Intermediate data files
 │   ├── chembl_smiles.csv           # Final SMILES dataset
 │   ├── db_complete.csv             # Processed activity dataset
-│   ├── morgan_fingerprints.npy     # Morgan fingerprints radius 2 (Zenodo)
-│   ├── morgan_fingerprints_R3.npy  # Morgan fingerprints radius 3 (Zenodo)
-│   └── Y_matrix.npy                # Binary activity matrix (Zenodo)
+│   ├── morgan_fingerprints.npy     # Morgan fingerprints radius 2
+│   ├── morgan_fingerprints_R3.npy  # Morgan fingerprints radius 3
+│   └── Y_matrix.npy                # Binary activity matrix
 ├── figures/
 │   ├── Boxplot_acts_filter.png
 │   └── distribucio_pchembl.png
 ├── src/
-│   ├── best_models/                # Best trained model files (.pt, .pkl)
+│   ├── best_models/                # Best trained model files
 │   ├── data_download/
 │   │   ├── chembl_activities.py    # Download bioactivity data from ChEMBL
 │   │   ├── chembl_conf_score.py    # Download assay confidence scores
