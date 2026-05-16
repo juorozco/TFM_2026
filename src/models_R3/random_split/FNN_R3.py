@@ -40,7 +40,7 @@ train_loader = DataLoader(TensorDataset(X_train, Y_train), batch_size = 256, shu
 val_loader = DataLoader(TensorDataset(X_val, Y_val), batch_size = 256, shuffle = False)
 test_loader = DataLoader(TensorDataset(X_test, Y_test), batch_size = 256, shuffle = False)
 
-# Feed Forward Neural Network:
+# Feed Forward Neural Network amb radi = 3:
 class FeedForward_NN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()

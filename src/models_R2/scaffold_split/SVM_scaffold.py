@@ -24,7 +24,7 @@ svm_models = {}
 
 nonvalid_targets = 0
 
-# Model SVM scaffold split::
+# Model SVM scaffold split:
 for target in range(targets):
 
     total_y_train = Y[train, target]

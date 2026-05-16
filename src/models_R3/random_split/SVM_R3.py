@@ -24,7 +24,7 @@ svm_models = {}
 
 nonvalid_targets = 0
 
-# Model SVM:
+# Model SVM amb radi = 3:
 for target in range(targets):
 
     total_y_train = Y[train, target]
