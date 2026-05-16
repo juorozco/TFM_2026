@@ -1,6 +1,5 @@
 import numpy as np
 import pandas as pd
-import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.svm import LinearSVC
 from sklearn.metrics import roc_auc_score, average_precision_score
@@ -72,5 +71,3 @@ print("Mean BEDROC:", np.nanmean(bedroc_scores))
 print("Mean EF@1%:", np.nanmean(enrich_factor))
 print("STD ROC-AUC:", np.std(roc_auc_scores))
 print("Targets evaluated:", len(roc_auc_scores))
-
-joblib.dump(svm_models, "src/best_models/best_SVM_model.pkl")

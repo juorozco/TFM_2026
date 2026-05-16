@@ -1,7 +1,6 @@
 import numpy as np
 import sys
 sys.path.append("src")
-import joblib
 from scaffold_split import scaffold_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score, average_precision_score
@@ -70,5 +69,3 @@ print("Mean BEDROC:", np.nanmean(bedroc_scores))
 print("Mean EF@1%:", np.nanmean(enrich_factor))
 print("STD ROC-AUC:", np.std(roc_auc_scores))
 print("Targets evaluated:", len(roc_auc_scores))
-
-joblib.dump(rf_models, "src/best_models/best_RF_scaffold.pkl")

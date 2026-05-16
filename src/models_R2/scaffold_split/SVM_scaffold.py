@@ -1,7 +1,6 @@
 import numpy as np
 import sys
 sys.path.append("src")
-import joblib
 from scaffold_split import scaffold_split
 from sklearn.svm import LinearSVC
 from sklearn.metrics import roc_auc_score, average_precision_score
@@ -71,5 +70,3 @@ print("Mean BEDROC:", np.nanmean(bedroc_scores))
 print("Mean EF@1%:", np.nanmean(enrich_factor))
 print("STD ROC-AUC:", np.std(roc_auc_scores))
 print("Targets evaluated:", len(roc_auc_scores))
-
-joblib.dump(svm_models, "src/best_models/best_SVM_scaffold.pkl")
