@@ -11,12 +11,12 @@
 
 ## Descripció
 
-Aquest repositori conté el codi i les dades del treball de final de màster (TFM) sobre la predicció d'interaccions off-target de. compostos químics sobre 318 cinases humanes, utilitzant dades de bioactivitat extretes de la base de dades ChEMBL.
+Aquest repositori conté el codi i les dades del treball de final de màster (TFM) sobre la predicció d'interaccions off-target de compostos químics sobre 318 cinases humanes, utilitzant dades de bioactivitat extretes de la base de dades ChEMBL.
 
 Es comparen tres tipus de models sota dues estratègies de partició de dades:
 - **Support Vector Machine (SVM) i Random Forest (RF)** — entrenats de forma independent per a cada cinasa (Scikit-Learn)
 - **Feedforward Neural Network (FNN)** — multi-task, entrenada simultàniament sobre tots els targets (PyTorch)
-- **Random split** and **Scaffold split** (Bemis–Murcko)
+- **Random split** and **Scaffold split** (Bemis–Murcko), com a estratègies de partició de dades
 
 Tots els models s'avaluen mitjançant les mètriques ROC-AUC, PR-AUC, BEDROC (α = 20) i Enrichment Factor a l'1% (EF1%).
 
@@ -70,4 +70,4 @@ TFM/
 ## Autora
 
 **Judith Orozco**
-— Treball de final de màster -- Universitat Oberta de Catalunya (UOC) i UB, 2026
+— Treball de final de màster | Universitat Oberta de Catalunya (UOC) i UB, 2026
