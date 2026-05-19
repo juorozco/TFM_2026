@@ -9,52 +9,52 @@
 ![Pandas](https://img.shields.io/badge/Pandas-3.0.2-purple)
 ![ChEMBL](https://img.shields.io/badge/ChEMBL_client-0.10.9-lightgrey)
 
-## Overview
+## Descripció
 
-This repository contains the code and data for the Master's Thesis (TFM) on predicting off-target interactions of chemical compounds across 318 human kinases using bioactivity data from the ChEMBL database.
+Aquest repositori conté el codi i les dades del treball de final de màster (TFM) sobre la predicció d'interaccions off-target de. compostos químics sobre 318 cinases humanes, utilitzant dades de bioactivitat extretes de la base de dades ChEMBL.
 
-Three model types are compared under two data splitting strategies:
-- **Support Vector Machine (SVM) and Random Forest (RF)** — trained independently per kinase (Scikit-Learn)
-- **Feedforward Neural Network (FNN)** — multi-task, trained simultaneously on all targets (PyTorch)
+Es comparen tres tipus de models sota dues estratègies de partició de dades:
+- **Support Vector Machine (SVM) i Random Forest (RF)** — entrenats de forma independent per a cada cinasa (Scikit-Learn)
+- **Feedforward Neural Network (FNN)** — multi-task, entrenada simultàniament sobre tots els targets (PyTorch)
 - **Random split** and **Scaffold split** (Bemis–Murcko)
 
-All models are evaluated using ROC-AUC, PR-AUC, BEDROC (α = 20) and Enrichment Factor at 1% (EF1%).
+Tots els models s'avaluen mitjançant les mètriques ROC-AUC, PR-AUC, BEDROC (α = 20) i Enrichment Factor a l'1% (EF1%).
 
 ---
 
-## Repository Structure
+## Estructura del repositori
 
 ```
 TFM/
 ├── data/
-│   ├── partials/                   # Intermediate data files
-│   ├── chembl_smiles.csv           # Final SMILES dataset
-│   ├── db_complete.csv             # Processed activity dataset
-│   ├── morgan_fingerprints.npy     # Morgan fingerprints radius 2
-│   ├── morgan_fingerprints_R3.npy  # Morgan fingerprints radius 3
-│   └── Y_matrix.npy                # Binary activity matrix
+│   ├── partials/                   # Fitxers de dades intermedis
+│   ├── chembl_smiles.csv           # Dataset d'SMILES finals
+│   ├── db_complete.csv             # Dataset d'activitat processat
+│   ├── morgan_fingerprints.npy     # Morgan fingerprints radi 2
+│   ├── morgan_fingerprints_R3.npy  # Morgan fingerprints radi 3
+│   └── Y_matrix.npy                # Matriu d'activitat binària
 ├── figures/
 │   ├── Boxplot_acts_filter.png
 │   └── distribucio_pchembl.png
 ├── src/
-│   ├── best_models/                # Best trained model files
+│   ├── best_models/                # Millors models entrenats
 │   ├── data_download/
-│   │   ├── chembl_activities.py    # Download bioactivity data from ChEMBL
-│   │   ├── chembl_conf_score.py    # Download assay confidence scores
-│   │   ├── chembl_smiles.py        # Download SMILES for compounds
-│   │   ├── morgan_fingerP.py       # Generate Morgan fingerprints (radius 2)
-│   │   └── morgan_fingerP_R3.py    # Generate Morgan fingerprints (radius 3)
+│   │   ├── chembl_activities.py    # Descàrrega de dades de bioactivitat de ChEMBL
+│   │   ├── chembl_conf_score.py    # Descàrrega dels graus de confiança
+│   │   ├── chembl_smiles.py        # Descàrrega dels SMILES dels compostos
+│   │   ├── morgan_fingerP.py       # Generació de Morgan fingerprints (radi 2)
+│   │   └── morgan_fingerP_R3.py    # Generació de Morgan fingerprints (radi 3)
 │   ├── data_preparation/
-│   │   ├── merge_and_quality.py    # Merge datasets and apply quality filters
-│   │   └── multilabel_matrix.py    # Build binary activity matrix
-│   ├── models_R2/                  # Models with radius = 2
+│   │   ├── merge_and_quality.py    # Fusió de les dades i implementació dels filtres de qualitat
+│   │   └── multilabel_matrix.py    # Construcció de la matriu d'activitat
+│   ├── models_R2/                  # Models amb radi = 2
 │   │   ├── random_split/
 │   │   │   ├── SVM_random.py
 │   │   │   └── FNN_random.py
 │   │   └── scaffold_split/
 │   │       ├── SVM_scaffold.py
 │   │       └── FNN_scaffold.py
-│   ├── models_R3/                  # Models with radius = 3
+│   ├── models_R3/                  # Models amb radi = 3
 │   │   ├── random_split/
 │   │   │   ├── SVM_R3.py
 │   │   │   └── FNN_R3.py
@@ -67,7 +67,7 @@ TFM/
 └── README.md
 ```
 
-## Author
+## Autora
 
 **Judith Orozco**
-— UB & Universitat Oberta de Catalunya (UOC), 2026
+— Treball de final de màster -- Universitat Oberta de Catalunya (UOC) i UB, 2026
