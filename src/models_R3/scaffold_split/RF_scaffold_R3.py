@@ -38,10 +38,6 @@ for target in range(targets):
     X_test = X[test][test_mask]
     y_test = total_y_test[test_mask]
 
-    if len(y_train) < 100:
-        nonvalid_targets += 1
-        continue
-
     if len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2:
         nonvalid_targets += 1
         continue
