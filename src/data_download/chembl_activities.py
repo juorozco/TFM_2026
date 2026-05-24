@@ -12,14 +12,20 @@ print(len(data))
 data_compounds = data[data['Compounds'] > 50]
 print(len(data_compounds)) # comprobació de que el nombre s'ha reduït
 
-# Boxplot d'outliers per eliminar els compostos amb molt poques activitats:
-plt.figure()
-data_compounds['Activities'].plot(kind = 'box')
-plt.title("Activities")
-plt.ylabel("Activities")
-plt.savefig("figures/Boxplot_acts_filter.png")
-plt.show() # El boxplot mostra que les cinases amb menys activitats associades són les que tenen menys de 700.
+plt.figure(figsize = (6,6))
+plt.boxplot(
+    data_compounds['Activities'],
+    patch_artist = True,
+    boxprops = dict(facecolor = 'xkcd:grey green'),
+    medianprops = dict(color = 'xkcd:pine', linewidth = 1.5)
+)
 
+plt.axhline(700, linestyle = '--', linewidth = 1, color = 'xkcd:eggplant')
+plt.ylabel("Nombre d'activitats")
+plt.title("Distribució d'activitats per cinasa")
+plt.tight_layout()
+plt.savefig("figures/Boxplot_activitats.png", dpi = 300)
+plt.show()
 
 # Es decideix eliminar els targets amb menys de 700 activitats. 
 # Els que tenen moltes activitats associades són targets importants i, encara que siguin outliers, es conserven.
@@ -53,4 +59,3 @@ df_acts = pd.DataFrame(all_activities)
 df_acts.to_csv("data/partials/db_final.csv", index = False)
 
 print(len(df_acts))
-#

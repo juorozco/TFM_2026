@@ -41,8 +41,8 @@ print("STD pChEMBL:", round(df_complete['pchembl_value'].std(), 4))
 
 # Histograma pChEMBL:
 plt.figure(figsize = (8, 5))
-plt.hist(df_complete['pchembl_value'], bins = 50, color = 'salmon', edgecolor = 'whitesmoke')
-plt.axvline(x = 6.5, color = 'red', linestyle = '--', linewidth = 1.5, label = 'Llindar activitat (pChEMBL = 6.5)')
+plt.hist(df_complete['pchembl_value'], bins = 50, color = 'xkcd:grey green', edgecolor = 'xkcd:white')
+plt.axvline(x = 6.5, color = 'xkcd:eggplant', linestyle = '--', linewidth = 1.5, label = 'Llindar activitat (pChEMBL = 6.5)')
 plt.xlabel('pChEMBL')
 plt.ylabel('Nombre de registres')
 plt.legend()
