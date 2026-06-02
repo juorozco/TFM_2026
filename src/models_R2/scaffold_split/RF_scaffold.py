@@ -6,14 +6,14 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
-# Càrrega de dades:
+# Mateixa arquitectura que RF random split R2
+# Scaffold split enlloc de random split
+
 X = np.load("data/morgan_fingerprints.npy")
 Y = np.load("data/Y_matrix.npy")
 
-# Partició:
 train, test = scaffold_split("data/chembl_smiles.csv", test_size = 0.20, random_state = 42)
 
-# Mètriques:
 targets = Y.shape[1]
 
 roc_auc_scores = []
@@ -24,7 +24,7 @@ rf_models = {}
 
 nonvalid_targets = 0
 
-# Model RF scaffold split:
+# RF_scaffold:
 for target in range(targets):
 
     total_y_train = Y[train, target]
@@ -58,7 +58,6 @@ for target in range(targets):
     bedroc_scores.append(CalcBEDROC(scores_array, col = 1, alpha = 20.0))
     enrich_factor.append(CalcEnrichment(scores_array, col = 1, fractions = [0.01])[0])
 
-# Resultats:
 print("Mean ROC-AUC:", np.mean(roc_auc_scores))
 print("Mean PR-AUC:", np.mean(pr_auc_scores))
 print("Mean BEDROC:", np.nanmean(bedroc_scores))

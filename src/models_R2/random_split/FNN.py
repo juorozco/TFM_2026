@@ -18,7 +18,7 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # Càrrega de dades:
-X = np.load("data/morgan_fingerprints.npy") # fingerprints moleculars (Morgan fingerprints, radi 2)
+X = np.load("data/morgan_fingerprints.npy") # fingerprints moleculars (Morgan fingerprints)
 Y = np.load("data/Y_matrix.npy") # matriu multi-label d'activitat
 
 # Random split (train 70%, test 20%, validtion 10%):
@@ -41,7 +41,7 @@ train_loader = DataLoader(TensorDataset(X_train, Y_train), batch_size = 256, shu
 val_loader = DataLoader(TensorDataset(X_val, Y_val), batch_size = 256, shuffle = False)
 test_loader = DataLoader(TensorDataset(X_test, Y_test), batch_size = 256, shuffle = False)
 
-# Model Feed Forward Neural Network:
+# FNN:
 class FeedForward_NN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
@@ -63,7 +63,7 @@ class FeedForward_NN(nn.Module):
 
 FNN_model = FeedForward_NN(2048, 318).to(device)      
 
-# BCEWithLogitsLoss amb mask per ignorar els valors NAN:
+# BCEWithLogitsLoss amb mask per ignorar els valors NaN:
 def masked_loss(prediction, target):                  
     mask = ~torch.isnan(target)                       
 
