@@ -16,5 +16,5 @@ for id in kinase_ids:
         'pref_name': result['pref_name']})
 
 df_kinases = pd.DataFrame(kinases_list)
-df_kinases.to_csv("data/kinase_list.csv", index = False)
+df_kinases.to_csv("data/biological_analysis/kinase_list.csv", index = False)
 print(df_kinases.head())
