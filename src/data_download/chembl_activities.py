@@ -22,7 +22,6 @@ plt.boxplot(
 
 plt.axhline(700, linestyle = '--', linewidth = 1, color = 'xkcd:eggplant')
 plt.ylabel("Nombre d'activitats")
-plt.title("Distribució d'activitats per cinasa")
 plt.tight_layout()
 plt.savefig("figures/Boxplot_activitats.png", dpi = 300)
 plt.show()

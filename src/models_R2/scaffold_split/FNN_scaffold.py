@@ -3,7 +3,7 @@ import torch
 import torch.nn as nn
 import sys
 sys.path.append("src")
-from scaffold_split import scaffold_split
+from scaffold_split_function import scaffold_split
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
