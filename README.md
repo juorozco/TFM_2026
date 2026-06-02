@@ -5,8 +5,8 @@
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.11.0-red)
 ![Scikit-Learn](https://img.shields.io/badge/ScikitLearn-1.8.0-orange)
 ![RDKit](https://img.shields.io/badge/RDKit-2026.3.1-green)
-![NumPy](https://img.shields.io/badge/NumPy-2.4.4-blue)
-![Pandas](https://img.shields.io/badge/Pandas-3.0.2-purple)
+![NumPy](https://img.shields.io/badge/NumPy-2.4.6-blue)
+![Pandas](https://img.shields.io/badge/Pandas-3.0.3-purple)
 ![ChEMBL](https://img.shields.io/badge/ChEMBL_client-0.10.9-lightgrey)
 
 ## Descripció
@@ -27,47 +27,64 @@ Tots els models s'avaluen mitjançant les mètriques ROC-AUC, PR-AUC, BEDROC (α
 ```
 TFM/
 ├── data/
+|   ├── biological_analysis/        # Fitxers de l'anàlisi biològica
 │   ├── partials/                   # Fitxers de dades intermedis
 │   ├── chembl_smiles.csv           # Dataset d'SMILES finals
 │   ├── db_complete.csv             # Dataset d'activitat processat
-│   ├── morgan_fingerprints.npy     # Morgan fingerprints radi 2
 │   ├── morgan_fingerprints_R3.npy  # Morgan fingerprints radi 3
+│   ├── morgan_fingerprints.npy     # Morgan fingerprints radi 2
 │   └── Y_matrix.npy                # Matriu d'activitat binària
 ├── figures/
-│   ├── Boxplot_acts_filter.png
-│   └── distribucio_pchembl.png
+│   ├── Boxplot_activitats.png
+│   ├── distribucio_pchembl.png
+│   ├── heatmap.png
+│   └── top20_cinases.png
 ├── src/
 │   ├── best_models/                # Millors models entrenats
+│   ├── biological_analysis/        # Codi de l'anàlisi biològica
 │   ├── data_download/
 │   │   ├── chembl_activities.py    # Descàrrega de dades de bioactivitat de ChEMBL
 │   │   ├── chembl_conf_score.py    # Descàrrega dels graus de confiança
 │   │   ├── chembl_smiles.py        # Descàrrega dels SMILES dels compostos
-│   │   ├── morgan_fingerP.py       # Generació de Morgan fingerprints (radi 2)
-│   │   └── morgan_fingerP_R3.py    # Generació de Morgan fingerprints (radi 3)
+│   │   ├── morgan_fingerP_R3.py    # Generació de Morgan fingerprints (radi 3)
+│   │   └── morgan_fingerP.py       # Generació de Morgan fingerprints (radi 2)
 │   ├── data_preparation/
 │   │   ├── merge_and_quality.py    # Fusió de les dades i implementació dels filtres de qualitat
-│   │   └── multilabel_matrix.py    # Construcció de la matriu d'activitat
+│   │   └── MultiLabel_matrix.py    # Construcció de la matriu d'activitat
 │   ├── models_R2/                  # Models amb radi = 2
 │   │   ├── random_split/
-│   │   │   ├── SVM_random.py
-│   │   │   └── FNN_random.py
+│   │   │   ├── FNN.py
+│   │   │   ├── RF.py
+│   │   │   └── SVM.py
 │   │   └── scaffold_split/
-│   │       ├── SVM_scaffold.py
-│   │       └── FNN_scaffold.py
+│   │       ├── FNN_scaffold.py
+│   │       ├── RF_scaffold.py
+│   │       └── SVM_scaffold.py
 │   ├── models_R3/                  # Models amb radi = 3
 │   │   ├── random_split/
-│   │   │   ├── SVM_R3.py
-│   │   │   └── FNN_R3.py
+│   │   │   ├── FNN_R3.py
+│   │   │   ├── RF_R3.py
+│   │   │   └── SVM_R3.py
 │   │   └── scaffold_split/
-│   │       ├── SVM_scaffold_R3.py
-│   │       └── FNN_scaffold_R3.py
-│   └── scaffold_split.py
+│   │       ├── FNN_scaffold_R3.py
+│   │       ├── RF_scaffold_R3.py
+│   │       └── SVM_scaffold_R3.py
+│   └── scaffold_split_function.py
+├── .gitattributes
 ├── .gitignore
-├── requirements.txt
-└── README.md
+├── README.md
+└── requirements.txt
+
 ```
 
 ## Autora
 
 **Judith Orozco**
 — Treball de final de màster | Universitat Oberta de Catalunya (UOC) i UB, 2026
+
+## Llicència
+
+Aquest projecte es distribueix sota la llicència
+Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0).
+
+https://creativecommons.org/licenses/by-nc/4.0/

@@ -9,7 +9,9 @@ from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 import random
 
-# Reproduïbilitat:
+# Mateixa arquitectura que FNN random split R2
+# Scaffold split enlloc de random split
+
 seed = 42
 random.seed(seed)
 np.random.seed(seed)
@@ -18,17 +20,14 @@ torch.cuda.manual_seed_all(seed)
 torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
-# Càrrega de dades
 X = np.load("data/morgan_fingerprints.npy").astype(np.float32)
 Y = np.load("data/Y_matrix.npy").astype(np.float32)
 
-# Partició:
 train, val, test = scaffold_split("data/chembl_smiles.csv", val_size = 0.10, test_size = 0.20)
 
 X_train, X_val, X_test = X[train], X[val], X[test]
 Y_train, Y_val, Y_test = Y[train], Y[val], Y[test]
 
-# Conversió a tensors:
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 X_train = torch.from_numpy(X_train).float()
@@ -42,7 +41,7 @@ train_loader = DataLoader(TensorDataset(X_train, Y_train), batch_size = 256, shu
 val_loader = DataLoader(TensorDataset(X_val, Y_val), batch_size = 256, shuffle = False)
 test_loader = DataLoader(TensorDataset(X_test, Y_test), batch_size = 256, shuffle = False)
 
-# Feed Forward Neural Network:
+# FNN_scaffold:
 class FeedForward_NN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
@@ -64,7 +63,6 @@ class FeedForward_NN(nn.Module):
 
 FNN_scaffold_model = FeedForward_NN(2048, Y_train.shape[1]).to(device)
 
-# Funció mask:
 def masked_loss(prediction, target):                 
     mask = ~torch.isnan(target)                      
 
@@ -78,7 +76,6 @@ def masked_loss(prediction, target):
 
     return masked_loss.sum() / mask.sum()
 
-# Funció per al càlcul de les mètriques d'avaluació:
 def evaluate(loader):
     FNN_scaffold_model.eval()
 
@@ -129,10 +126,8 @@ def evaluate(loader):
         "Targets": len(roc_auc_scores)
     }
 
-# Optimitzador Adam amb learning rate de 1e-4:
 optimizer = torch.optim.Adam(FNN_scaffold_model.parameters(), lr = 1e-4, weight_decay = 1e-4)
 
-# Entrenament del model:
 epochs = 100
 best_auc = 0
 patience = 10
@@ -165,7 +160,6 @@ for epoch in range(epochs):
 
         total_loss += loss_values.item()
 
- # Avaluació:
     results_val = evaluate(val_loader)               
 
     print(
@@ -175,7 +169,6 @@ for epoch in range(epochs):
         f"BEDROC: {results_val['BEDROC']:.4f} | "
         f"EF1%: {results_val['EF1%']:.4f}")
 
-# Early Stopping:
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0
@@ -190,7 +183,6 @@ for epoch in range(epochs):
 FNN_scaffold_model.load_state_dict(torch.load("src/best_models/best_FNN_scaffold.pt"))
 results_test = evaluate(test_loader) 
 
-# Resultats:
 print("Resultats")
 for k, v in results_test.items():
     if k != "Targets":

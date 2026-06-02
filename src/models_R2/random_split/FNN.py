@@ -18,17 +18,17 @@ torch.backends.cudnn.deterministic = True
 torch.backends.cudnn.benchmark = False
 
 # Càrrega de dades:
-X = np.load("data/morgan_fingerprints.npy") # matriu amb els descriptors moleculars
-Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
+X = np.load("data/morgan_fingerprints.npy") # fingerprints moleculars (Morgan fingerprints, radi 2)
+Y = np.load("data/Y_matrix.npy") # matriu multi-label d'activitat
 
-# Partició:
+# Random split (train 70%, test 20%, validtion 10%):
 mol_idx = np.arange(X.shape[0])
 train_val_idx, test_idx = train_test_split(mol_idx, test_size = 0.20, random_state = 42)
 train_idx, val_idx = train_test_split(train_val_idx, test_size = 0.125, random_state = 42)
 
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
-# Conversió a tensors:
+# Conversió a tensors PyTorch:
 X_train = torch.from_numpy(X[train_idx].astype(np.float32)).float()
 Y_train = torch.from_numpy(Y[train_idx].astype(np.float32)).float()
 X_val = torch.from_numpy(X[val_idx].astype(np.float32)).float()
@@ -36,37 +36,38 @@ Y_val = torch.from_numpy(Y[val_idx].astype(np.float32)).float()
 X_test = torch.from_numpy(X[test_idx].astype(np.float32)).float()
 Y_test = torch.from_numpy(Y[test_idx].astype(np.float32)).float()
 
+# Data Loaders:
 train_loader = DataLoader(TensorDataset(X_train, Y_train), batch_size = 256, shuffle = True)
 val_loader = DataLoader(TensorDataset(X_val, Y_val), batch_size = 256, shuffle = False)
 test_loader = DataLoader(TensorDataset(X_test, Y_test), batch_size = 256, shuffle = False)
 
-# Feed Forward Neural Network:
+# Model Feed Forward Neural Network:
 class FeedForward_NN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
 
-        self.net = nn.Sequential(               # capes seqüencials
-            nn.Linear(input_dim, 1024),         # primera capa desde total de bits
-            nn.ReLU(),                          # funció d'activació
-            nn.Dropout(0.25),                   # regularització amb dropout per millorar l'overfitting
+        self.net = nn.Sequential(               
+            nn.Linear(input_dim, 1024),         
+            nn.ReLU(),                          
+            nn.Dropout(0.25),                   
 
-            nn.Linear(1024, 512),               # segona capa
+            nn.Linear(1024, 512),               
             nn.ReLU(),
             nn.Dropout(0.25),
 
-            nn.Linear(512, output_dim)          # tercera capa fins mida dels targets.
+            nn.Linear(512, output_dim)          
         )
 
-    def forward(self, input):                   # Xarxa feedforward
+    def forward(self, input):                   
         return self.net(input)
 
-FNN_model = FeedForward_NN(2048, 318).to(device)      # aplicació de la classe al model
+FNN_model = FeedForward_NN(2048, 318).to(device)      
 
-# Funció mask:
-def masked_loss(prediction, target):                  # càlcul del l'error del model ignorant els valors NaN amb mask
+# BCEWithLogitsLoss amb mask per ignorar els valors NAN:
+def masked_loss(prediction, target):                  
     mask = ~torch.isnan(target)                       
 
-    loss = nn.BCEWithLogitsLoss(reduction = 'none')   # funció per calcular el loss amb none + Binary Cross Entropy
+    loss = nn.BCEWithLogitsLoss(reduction = 'none')   
     loss_value = loss(prediction, torch.nan_to_num(target)) 
 
     masked_loss = loss_value * mask                   
@@ -74,9 +75,9 @@ def masked_loss(prediction, target):                  # càlcul del l'error del 
     if mask.sum() == 0:                               
         return torch.zeros((), device = prediction.device, requires_grad = True)
 
-    return masked_loss.sum() / mask.sum()             # mitjana de loss només dels valors vàlids
+    return masked_loss.sum() / mask.sum()            
 
-# Funció per al càlcul de les mètriques d'avaluació:
+# Càlcul de les mètriques d'avaluació:
 def evaluate(loader):
     FNN_model.eval()
 
@@ -86,7 +87,7 @@ def evaluate(loader):
     with torch.no_grad():
         for x_batch, y_batch in loader:
             x_batch = x_batch.to(device)
-            preds = torch.sigmoid(FNN_model(x_batch)).cpu()   # conversió a probabilitats amb sigmoid
+            preds = torch.sigmoid(FNN_model(x_batch)).cpu()
 
             total_preds.append(preds)
             y_true_labels.append(y_batch)
@@ -106,14 +107,14 @@ def evaluate(loader):
         mask = ~np.isnan(true_target_label)
         true_target_label = true_target_label[mask]
         target_probs = target_probs[mask]
-
-        if len(np.unique(true_target_label)) < 2:              # Han d'estar les dues classes
+        
+        # Filtre per assegurar les dues classes
+        if len(np.unique(true_target_label)) < 2:              
             continue
 
         roc_auc_scores.append(roc_auc_score(true_target_label, target_probs))
         pr_auc_scores.append(average_precision_score(true_target_label, target_probs))
 
-        # Array ordenat per score descendent pel càlcul de bedroc i EF1%:
         order = np.argsort(-target_probs)
         scores_array = np.column_stack([target_probs[order], true_target_label[order]])
 
@@ -128,10 +129,10 @@ def evaluate(loader):
         "Targets": len(roc_auc_scores)
     }
 
-# Optimitzador Adam amb learning rate de 1e-4:
+# Optimitzador Adam amb learning rate i weight decay de 1e-4:
 optimizer = torch.optim.Adam(FNN_model.parameters(), lr = 1e-4, weight_decay = 1e-4)
 
-# Entrenament del model:
+# Entrenament del model amb early stopping basat en ROC_AUC:
 epochs = 100
 best_auc = 0
 patience = 10
@@ -146,8 +147,9 @@ for epoch in range(epochs):
 
         X_batch = X_batch.to(device)
         Y_batch = Y_batch.to(device)
-
-        valid_data = (~torch.isnan(Y_batch)).sum(dim = 1) > 0 # elimina compostos que no interaccionin amb cap target
+        
+        # elimina compostos que no interaccionin amb cap target
+        valid_data = (~torch.isnan(Y_batch)).sum(dim = 1) > 0 
         X_batch = X_batch[valid_data]
         Y_batch = Y_batch[valid_data]
 
@@ -164,7 +166,7 @@ for epoch in range(epochs):
 
         total_loss += loss_values.item()
 
- # Avaluació:
+    # Avaluació del model:
     results_val = evaluate(val_loader)                      
     
     print(
@@ -174,7 +176,6 @@ for epoch in range(epochs):
         f"BEDROC: {results_val['BEDROC']:.4f} | "
         f"EF1%: {results_val['EF1%']:.4f}")
 
-# Early Stopping:
     if results_val["AUC"] > best_auc:
         best_auc = results_val["AUC"]
         no_improve = 0
@@ -186,10 +187,10 @@ for epoch in range(epochs):
         print("Early stopping")
         break
 
+# Resultats:
 FNN_model.load_state_dict(torch.load("src/best_models/best_FNN_model.pt"))
 results_test = evaluate(test_loader) 
 
-# Resultats:
 print("Resultats")
 for k, v in results_test.items():
     if k != "Targets":
