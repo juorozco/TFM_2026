@@ -59,6 +59,7 @@ for target in range(targets):
     roc_auc_scores.append(roc_auc_score(y_test, scores))
     pr_auc_scores.append(average_precision_score(y_test, scores))
 
+    # Ranking per mètriques early enrichment
     order = np.argsort(-scores)
     scores_array = np.column_stack([scores[order], y_test[order]])
 

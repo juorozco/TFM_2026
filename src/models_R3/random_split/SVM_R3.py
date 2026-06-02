@@ -5,15 +5,15 @@ from sklearn.svm import LinearSVC
 from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
-# Càrrega de dades:
-X = np.load("data/morgan_fingerprints_R3.npy") # matriu amb els descriptors moleculars
-Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
+# Mateixa arquitectura que SVM random split R2
+# Diferència: Morgan fingerprints amb radi 3 enlloc de radi 2
 
-# Partició:
+X = np.load("data/morgan_fingerprints_R3.npy") 
+Y = np.load("data/Y_matrix.npy") 
+
 mol_idx = np.arange(X.shape[0])
 train, test = train_test_split(mol_idx, test_size = 0.2, random_state = 42, shuffle = True)
 
-# Mètriques:
 targets = Y.shape[1]
 
 roc_auc_scores = []
@@ -24,7 +24,7 @@ svm_models = {}
 
 nonvalid_targets = 0
 
-# Model SVM amb radi = 3:
+# SVM_R3:
 for target in range(targets):
 
     total_y_train = Y[train, target]
@@ -39,7 +39,7 @@ for target in range(targets):
     X_test = X[test][test_mask]
     y_test = total_y_test[test_mask]
 
-    if len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2: # les dues classes als dos subconjunts
+    if len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2: 
         nonvalid_targets += 1
         continue
 
@@ -60,7 +60,6 @@ for target in range(targets):
     bedroc_scores.append(CalcBEDROC(scores_array, col = 1, alpha = 20.0))
     enrich_factor.append(CalcEnrichment(scores_array, col = 1, fractions = [0.01])[0])
 
-# Resultats:
 print("Mean ROC-AUC:", np.mean(roc_auc_scores))
 print("Mean PR-AUC:", np.mean(pr_auc_scores))
 print("Mean BEDROC:", np.nanmean(bedroc_scores))

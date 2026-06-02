@@ -6,54 +6,61 @@ from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
 # Càrrega de dades:
-X = np.load("data/morgan_fingerprints.npy") # matriu amb els descriptors moleculars
-Y = np.load("data/Y_matrix.npy") # matriu amb les dades d'activitat
+X = np.load("data/morgan_fingerprints.npy") # fingerprints moleculars (Morgan fingerprints)
+Y = np.load("data/Y_matrix.npy") # matriu multi-label d'activitat
 
-# Partició:
+# Random split (train 80%, test 20%) i reproduïbilitat:
 mol_idx = np.arange(X.shape[0])
 train, test = train_test_split(mol_idx, test_size = 0.2, random_state = 42, shuffle = True)
 
-# Mètriques:
+# Inicialització de les variables d'avaluació:
 targets = Y.shape[1]
 
 roc_auc_scores = []
 pr_auc_scores = []
 bedroc_scores = []
 enrich_factor = []
+
+# Diccionari per emmagatzemar un model per cada cinasa:
 svm_models = {}
 
+# Targets descartats:
 nonvalid_targets = 0
 
-# Model SVM:
+# SVM:
 for target in range(targets):
 
+    # Separació de labels per cinasa
     total_y_train = Y[train, target]
     total_y_test = Y[test, target]
-
+    
+    # Eliminació de valors NaN
     train_mask = ~np.isnan(total_y_train)
     test_mask  = ~np.isnan(total_y_test)
 
     X_train = X[train][train_mask]
     y_train = total_y_train[train_mask]
-
     X_test = X[test][test_mask]
     y_test = total_y_test[test_mask]
-
-    if len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2: # les dues classes als dos subconjunts
+    
+    # Filtre per assegurar les dues classes
+    if len(np.unique(y_train)) < 2 or len(np.unique(y_test)) < 2:
         nonvalid_targets += 1
         continue
 
     SVM_model = LinearSVC(C = 1.0, class_weight = "balanced", max_iter = 5000)
     SVM_model.fit(X_train, y_train)
-
+    
+    # Score continu
     scores = SVM_model.decision_function(X_test)
 
     svm_models[target] = SVM_model
 
-
+    # Avaluació:
     roc_auc_scores.append(roc_auc_score(y_test, scores))
     pr_auc_scores.append(average_precision_score(y_test, scores))
 
+    # Ranking per mètriques early enrichment
     order = np.argsort(-scores)
     scores_array = np.column_stack([scores[order], y_test[order]])
 
