@@ -25,18 +25,3 @@ for i, target_id in df['target_chembl_id'].unique():
 
 df_conf_assays = pd.DataFrame(conf_scores)
 df_conf_assays.to_csv("data/partials/conf_assays_types.csv", index = False)
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
