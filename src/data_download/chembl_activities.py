@@ -2,39 +2,37 @@ from chembl_webresource_client.new_client import new_client
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("data/partials/db.tsv", sep = '\t')  # carrega de les dades extretes de la web de ChEMBL 
+# Càrrega de les dades extretes de ChEMBL:
+data = pd.read_csv("data/partials/db.tsv", sep = '\t')
 print(data.head())
 
-data = data.drop(columns = ['Species Group Flag', 'Tax ID']) # Neteja de les dues columnes que no es necessiten
+# Neteja de les dues columnes que no es necessitaran per a l'estudi:
+data = data.drop(columns = ['Species Group Flag', 'Tax ID'])
 print(len(data))
 
 # Filtre per targets que tinguin almenys 50 compostos associats:
 data_compounds = data[data['Compounds'] > 50]
-print(len(data_compounds)) # comprobació de que el nombre s'ha reduït
+print(len(data_compounds))
 
+# Boxplot d'activitats:
 plt.figure(figsize = (6,6))
 plt.boxplot(
     data_compounds['Activities'],
     patch_artist = True,
     boxprops = dict(facecolor = 'xkcd:grey green'),
-    medianprops = dict(color = 'xkcd:pine', linewidth = 1.5)
-)
-
+    medianprops = dict(color = 'xkcd:pine', linewidth = 1.5))
 plt.axhline(700, linestyle = '--', linewidth = 1, color = 'xkcd:eggplant')
 plt.ylabel("Nombre d'activitats")
 plt.tight_layout()
 plt.savefig("figures/Boxplot_activitats.png", dpi = 300)
 plt.show()
 
-# Es decideix eliminar els targets amb menys de 700 activitats. 
-# Els que tenen moltes activitats associades són targets importants i, encara que siguin outliers, es conserven.
-
+# Eliminació de dianes amb < 700 activitats:
 df_filtered = data_compounds[data_compounds['Activities'] > 700]
-print(len(df_filtered)) # Queden 318 cinases
-
+print(len(df_filtered))
 df_filtered.to_csv("data/partials/db_filtered.csv", index = False)
 
-# Associació dels targets amb els compostos, les activitats i els assays corresponents:
+# Associació de les cinases amb els compostos, les activitats i els assays corresponents:
 activity = new_client.activity
 
 kinases = df_filtered['ChEMBL ID'].tolist()
@@ -56,5 +54,3 @@ for target_id in kinases:
 
 df_acts = pd.DataFrame(all_activities)
 df_acts.to_csv("data/partials/db_final.csv", index = False)
-
-print(len(df_acts))

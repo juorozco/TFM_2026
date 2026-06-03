@@ -1,6 +1,7 @@
 from chembl_webresource_client.new_client import new_client
 import pandas as pd
 
+# Obtenció dels SMILES de les molècules:
 df_complete = pd.read_csv("data/db_complete.csv")
 
 molecule = new_client.molecule
@@ -11,8 +12,7 @@ all_smiles = []
 for mol_id in molecule_id:
     mols = molecule.filter(molecule_chembl_id = mol_id).only([
         'molecule_chembl_id',
-        'molecule_structures'
-        ])
+        'molecule_structures'])
     for mol in mols:
         canonical_smiles = None
         if mol.get('molecule_structures'):
@@ -20,30 +20,20 @@ for mol_id in molecule_id:
 
         all_smiles.append({
             'molecule_chembl_id': mol['molecule_chembl_id'],
-            'canonical_smiles': canonical_smiles
-        })
+            'canonical_smiles': canonical_smiles })
 
-# Crear el DataFrame amb tots els resultats
 df_smiles = pd.DataFrame(all_smiles)
-
-# Guardar l'arxiu CSV final
 df_smiles.to_csv("chembl_smiles.csv", index = False)
 
-# Valors NA:
+# Eliminació dels SMILES no vàlids:
 print(df_smiles['canonical_smiles'].isna().sum())
 df_smiles = df_smiles.dropna(subset=['canonical_smiles'])
-
 df_smiles.to_csv("data/partials/chembl_smiles.csv", index = False)
 
 # Unió dels dos llistats obtinguts mitjançant el paràmetre molecule_chembl_id:
-
 df_morgan = df_complete.merge(
     df_smiles,
     on = "molecule_chembl_id",
-    how = "left"
-)
-
-print(df_morgan.head(5))
-print(len(df_morgan))
+    how = "left")
 
 df_morgan.to_csv("data/partials/db_for_morgan.csv")

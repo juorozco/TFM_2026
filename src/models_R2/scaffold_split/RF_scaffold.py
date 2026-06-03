@@ -7,7 +7,7 @@ from sklearn.metrics import roc_auc_score, average_precision_score
 from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 
 # Mateixa arquitectura que RF random split R2
-# Scaffold split enlloc de random split
+# Diferència: scaffold split enlloc de random split
 
 X = np.load("data/morgan_fingerprints.npy")
 Y = np.load("data/Y_matrix.npy")

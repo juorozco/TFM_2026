@@ -10,7 +10,7 @@ from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 import random
 
 # Mateixa arquitectura que FNN random split R2
-# Scaffold split enlloc de random split i radi dels Morgan fingerprints igual a 3
+# Diferència: scaffold split enlloc de random split i radi dels Morgan fingerprints igual a 3
 
 seed = 42
 random.seed(seed)

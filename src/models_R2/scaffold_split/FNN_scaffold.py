@@ -10,7 +10,7 @@ from rdkit.ML.Scoring.Scoring import CalcBEDROC, CalcEnrichment
 import random
 
 # Mateixa arquitectura que FNN random split R2
-# Scaffold split enlloc de random split
+# Diferència: scaffold split enlloc de random split
 
 seed = 42
 random.seed(seed)

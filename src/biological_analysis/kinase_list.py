@@ -11,9 +11,7 @@ kinases_list = []
 
 for id in kinase_ids:
     result = target.get(id)
-    kinases_list.append({
-        'target_chembl_id': id,
-        'pref_name': result['pref_name']})
+    kinases_list.append({'target_chembl_id': id, 'pref_name': result['pref_name']})
 
 df_kinases = pd.DataFrame(kinases_list)
 df_kinases.to_csv("data/biological_analysis/kinase_list.csv", index = False)

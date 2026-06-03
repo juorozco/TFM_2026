@@ -21,7 +21,7 @@ torch.backends.cudnn.benchmark = False
 X = np.load("data/morgan_fingerprints.npy") # fingerprints moleculars (Morgan fingerprints)
 Y = np.load("data/Y_matrix.npy") # matriu multi-label d'activitat
 
-# Random split (train 70%, test 20%, validtion 10%):
+# Random split (train 70%, test 20%, validation 10%):
 mol_idx = np.arange(X.shape[0])
 train_val_idx, test_idx = train_test_split(mol_idx, test_size = 0.20, random_state = 42)
 train_idx, val_idx = train_test_split(train_val_idx, test_size = 0.125, random_state = 42)

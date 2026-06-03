@@ -15,7 +15,7 @@ Aquest repositori conté el codi i les dades del treball de final de màster (TF
 
 Es comparen tres tipus de models sota dues estratègies de partició de dades:
 - **Support Vector Machine (SVM) i Random Forest (RF)** — entrenats de forma independent per a cada cinasa (Scikit-Learn)
-- **Feedforward Neural Network (FNN)** — multi-task, entrenada simultàniament sobre tots els targets (PyTorch)
+- **Feedforward Neural Network (FNN)** — multitasca, entrenada simultàniament sobre tots els targets (PyTorch)
 - **Random split** and **Scaffold split** (Bemis–Murcko), com a estratègies de partició de dades
 
 Tots els models s'avaluen mitjançant les mètriques ROC-AUC, PR-AUC, BEDROC (α = 20) i Enrichment Factor a l'1% (EF1%).
@@ -41,16 +41,16 @@ TFM/
 │   └── top20_cinases.png
 ├── src/
 │   ├── best_models/                # Millors models entrenats
-│   ├── biological_analysis/        # Codi de l'anàlisi biològica
+│   ├── biological_analysis/        # Script de l'anàlisi biològica
 │   ├── data_download/
 │   │   ├── chembl_activities.py    # Descàrrega de dades de bioactivitat de ChEMBL
-│   │   ├── chembl_conf_score.py    # Descàrrega dels graus de confiança
-│   │   ├── chembl_smiles.py        # Descàrrega dels SMILES dels compostos
+│   │   ├── chembl_conf_score.py    # Descàrrega dels confidence_scores i l'assay_type de les molècules
+│   │   ├── chembl_smiles.py        # Descàrrega dels SMILES de les molècules
 │   │   ├── morgan_fingerP_R3.py    # Generació de Morgan fingerprints (radi 3)
 │   │   └── morgan_fingerP.py       # Generació de Morgan fingerprints (radi 2)
 │   ├── data_preparation/
 │   │   ├── merge_and_quality.py    # Fusió de les dades i implementació dels filtres de qualitat
-│   │   └── MultiLabel_matrix.py    # Construcció de la matriu d'activitat
+│   │   └── MultiLabel_matrix.py    # Construcció de la matriu multi-label
 │   ├── models_R2/                  # Models amb radi = 2
 │   │   ├── random_split/
 │   │   │   ├── FNN.py
@@ -69,7 +69,7 @@ TFM/
 │   │       ├── FNN_scaffold_R3.py
 │   │       ├── RF_scaffold_R3.py
 │   │       └── SVM_scaffold_R3.py
-│   └── scaffold_split_function.py
+│   └── scaffold_split_function.py  # Funció comuna per a l'scaffold split dels models scaffold
 ├── .gitattributes
 ├── .gitignore
 ├── README.md
